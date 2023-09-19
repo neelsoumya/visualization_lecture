@@ -1,11 +1,11 @@
-# teaching_reproducible_science_R
+# visualization_lecture
 
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 
 ## Introduction
 
-Material, notes, code and data for teaching reproducible science and pipelines in R. 
+Material, notes, code and data for teaching visualization, dimensionality reduction and mathematics of machine learning. 
 
 ## Video lectures
 
