@@ -7,9 +7,25 @@
 
 Material, notes, code and data for teaching visualization, dimensionality reduction and mathematics of machine learning. 
 
+## Slides
+
+Introductory slides are here:
+
+https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx
+
+## Notes
+
+Some notes, mathematical proofs, concepts and activities are here:
+
+https://github.com/neelsoumya/visualization_lecture/blob/main/mathematics_data_science.pdf
+
+
+
+<!--
 ## Video lectures
 
 https://www.youtube.com/watch?v=ZDSj-jEoaoc
+-->
 
 ## Installation
 
