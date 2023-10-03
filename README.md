@@ -7,6 +7,10 @@
 
 Material, notes, code and data for teaching visualization, dimensionality reduction and mathematics of machine learning. 
 
+## Talk
+
+https://youtu.be/VMrSHp-sCHo?si=P_FOEZ6pJHy9xJf6
+
 ## Slides
 
 Introductory slides are here:
