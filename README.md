@@ -24,6 +24,11 @@ Some notes, mathematical proofs, concepts and activities are here:
 https://github.com/neelsoumya/visualization_lecture/blob/main/mathematics_data_science.pdf
 
 
+## Resources
+
+Great talks on visualization and how to do it right
+
+https://www.youtube.com/watch?v=iipVlV4I_Vg&list=PLB2SCq-tZtVnXalwtfVPcjwy0xJbu-btN&index=4
 
 <!--
 ## Video lectures
