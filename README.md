@@ -30,6 +30,18 @@ Great talks on visualization and how to do it right
 
 https://www.youtube.com/watch?v=iipVlV4I_Vg&list=PLB2SCq-tZtVnXalwtfVPcjwy0xJbu-btN&index=4
 
+Minard drawing (The best statistical graphic ever drawn)
+
+https://www.edwardtufte.com/tufte/minard
+
+code for analysing this data
+
+https://github.com/joannecheng/napoleon_analysis
+
+https://thoughtbot.com/blog/analyzing-minards-visualization-of-napoleons-1812-march
+
+
+
 <!--
 ## Video lectures
 
