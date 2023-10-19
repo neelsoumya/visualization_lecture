@@ -41,6 +41,14 @@ https://github.com/joannecheng/napoleon_analysis
 https://thoughtbot.com/blog/analyzing-minards-visualization-of-napoleons-1812-march
 
 
+Tufte's principles in R
+
+https://jtr13.github.io/cc19/tuftes-principles-of-data-ink.html
+
+Data visualization excellence
+
+https://classes.engr.oregonstate.edu/eecs/winter2018/cs519-400/modules/4-data-visualization/1-excellence-integrity/
+
 
 <!--
 ## Video lectures
