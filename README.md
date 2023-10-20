@@ -26,18 +26,25 @@ https://github.com/neelsoumya/visualization_lecture/blob/main/mathematics_data_s
 
 ## Resources
 
-Thinking outside the 10 dimensional box
+* Thinking outside the 10 dimensional box
 
 https://www.popularmechanics.com/science/math/a27737/visualize-higher-dimensions/
 
 https://youtu.be/zwAD6dRSVyI
 
+* Different kinds of cartographic projections
 
-Great talks on visualization and how to do it right
+https://whereexactlymaps.com/blogs/articles/an-introduction-to-map-projections
+
+https://www.viewsoftheworld.net/?p=752
+
+
+
+* Great talks on visualization and how to do it right
 
 https://www.youtube.com/watch?v=iipVlV4I_Vg&list=PLB2SCq-tZtVnXalwtfVPcjwy0xJbu-btN&index=4
 
-Minard drawing (The best statistical graphic ever drawn)
+* Minard drawing (The best statistical graphic ever drawn)
 
 https://www.edwardtufte.com/tufte/minard
 
@@ -48,11 +55,11 @@ https://github.com/joannecheng/napoleon_analysis
 https://thoughtbot.com/blog/analyzing-minards-visualization-of-napoleons-1812-march
 
 
-Tufte's principles in R
+* Tufte's principles in R
 
 https://jtr13.github.io/cc19/tuftes-principles-of-data-ink.html
 
-Data visualization excellence
+* Data visualization excellence
 
 https://classes.engr.oregonstate.edu/eecs/winter2018/cs519-400/modules/4-data-visualization/1-excellence-integrity/
 
