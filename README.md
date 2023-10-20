@@ -26,6 +26,13 @@ https://github.com/neelsoumya/visualization_lecture/blob/main/mathematics_data_s
 
 ## Resources
 
+Thinking outside the 10 dimensional box
+
+https://www.popularmechanics.com/science/math/a27737/visualize-higher-dimensions/
+
+https://youtu.be/zwAD6dRSVyI
+
+
 Great talks on visualization and how to do it right
 
 https://www.youtube.com/watch?v=iipVlV4I_Vg&list=PLB2SCq-tZtVnXalwtfVPcjwy0xJbu-btN&index=4
