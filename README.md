@@ -24,6 +24,13 @@ Some notes, mathematical proofs, concepts and activities are here:
 https://github.com/neelsoumya/visualization_lecture/blob/main/mathematics_data_science.pdf
 
 
+## Code
+
+Code for visualization in R, model diagnostics and linear mixed effects models 
+
+https://github.com/neelsoumya/anova_linear_mixed_effects_examples
+
+
 ## Resources
 
 * Thinking outside the 10 dimensional box
