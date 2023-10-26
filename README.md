@@ -70,6 +70,9 @@ https://jtr13.github.io/cc19/tuftes-principles-of-data-ink.html
 
 https://classes.engr.oregonstate.edu/eecs/winter2018/cs519-400/modules/4-data-visualization/1-excellence-integrity/
 
+* Visualization projects
+
+https://nagix.github.io/
 
 <!--
 ## Video lectures
