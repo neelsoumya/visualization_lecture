@@ -23,6 +23,10 @@ Some notes, mathematical proofs, concepts and activities are here:
 
 https://github.com/neelsoumya/visualization_lecture/blob/main/mathematics_data_science.pdf
 
+https://osf.io/mnh8d/
+
+https://www.researchgate.net/publication/375186575_Everything_you_wanted_to_know_about_the_mathematics_of_dimensionality_reduction_and_visualization_but_were_afraid_to_ask_Teaching_resources_and_activities
+
 
 ## Code
 
