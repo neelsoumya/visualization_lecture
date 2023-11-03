@@ -17,6 +17,9 @@ Introductory slides are here:
 
 https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx
 
+https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pdf
+
+
 ## Notes
 
 Some notes, mathematical proofs, concepts and activities are here:
