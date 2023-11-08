@@ -19,11 +19,14 @@ https://youtu.be/VMrSHp-sCHo?si=P_FOEZ6pJHy9xJf6
 
 ## Slides
 
-Introductory slides are here:
+* Slides on visualization are here:
+
+https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture.pdf
+
+* Slides on unsupervised learning are here:
 
 https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx
 
-https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pdf
 
 
 ## Notes
