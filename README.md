@@ -7,7 +7,13 @@
 
 Material, notes, code and data for teaching visualization, dimensionality reduction and mathematics of machine learning. 
 
-## Talk
+## Talks
+
+* Talk on visualization
+
+  
+
+* Talk on unsupervised learning
 
 https://youtu.be/VMrSHp-sCHo?si=P_FOEZ6pJHy9xJf6
 
