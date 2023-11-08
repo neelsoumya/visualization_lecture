@@ -81,6 +81,14 @@ https://classes.engr.oregonstate.edu/eecs/winter2018/cs519-400/modules/4-data-vi
 
 https://nagix.github.io/
 
+* Good and bad visualizations
+
+https://policyviz.com/2023/02/07/10-ways-to-mislead-with-data-visualization/
+
+https://wpdatatables.com/data-visualization-examples/
+
+https://wpdatatables.com/misleading-data-visualization-examples/
+
 <!--
 ## Video lectures
 
