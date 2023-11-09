@@ -100,6 +100,8 @@ https://wpdatatables.com/misleading-data-visualization-examples/
 
 https://www.qlik.com/us/data-visualization/data-visualization-examples
 
+https://policyviz.com/2020/08/10/on-diverging-color-palettes-in-maps/
+
 <!--
 ## Video lectures
 
