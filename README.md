@@ -98,6 +98,8 @@ https://wpdatatables.com/data-visualization-examples/
 
 https://wpdatatables.com/misleading-data-visualization-examples/
 
+https://www.qlik.com/us/data-visualization/data-visualization-examples
+
 <!--
 ## Video lectures
 
