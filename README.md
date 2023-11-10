@@ -104,6 +104,9 @@ https://policyviz.com/2020/08/10/on-diverging-color-palettes-in-maps/
 
 https://www.oldstreetsolutions.com/good-and-bad-data-visualization
 
+https://viz.wtf/
+
+
 <!--
 ## Video lectures
 
