@@ -444,7 +444,7 @@ library(rpart)
 
 ## Acknowledgements
 
-Joyeeta Ghose
+Neil Lawrence, Carl Henrik Ek, Joyeeta Ghose
 
 ## Contact
 
