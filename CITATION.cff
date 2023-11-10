@@ -3,10 +3,10 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Banerjee"
   given-names: "Soumya"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  orcid: "https://orcid.org/0000-0001-7748-9885"
 
-title: "teaching_reproducible_science_R"
+title: "visualization_lecture"
 version: 1.0.0
-doi: 10.5281/zenodo.1234
-date-released: 2022-06-30
-url: "https://github.com/neelsoumya/teaching_reproducible_science_R"
+doi: 10.5281/zenodo.8362656
+date-released: 2023-09-30
+url: "https://github.com/neelsoumya/visualization_lecture"
