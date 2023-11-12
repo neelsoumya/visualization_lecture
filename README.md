@@ -11,6 +11,7 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 * Talk on visualization
 
+https://www.youtube.com/watch?v=Bhv46UYAkg0
   
 
 * Talk on unsupervised learning
