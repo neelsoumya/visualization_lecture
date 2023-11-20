@@ -47,6 +47,9 @@ Code for visualization in R, model diagnostics and linear mixed effects models
 
 https://github.com/neelsoumya/anova_linear_mixed_effects_examples
 
+Rmarkdown package using Tufte's principles
+
+https://github.com/rstudio/tufte
 
 ## Resources
 
