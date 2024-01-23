@@ -115,6 +115,7 @@ https://www.oldstreetsolutions.com/good-and-bad-data-visualization
 
 https://viz.wtf/
 
+https://r-graph-gallery.com/
 
 <!--
 ## Video lectures
