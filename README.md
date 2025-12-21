@@ -33,7 +33,7 @@ https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lect
 
 https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx
 
-
+* [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
 
 ## Notes
 
