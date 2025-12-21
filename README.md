@@ -117,6 +117,9 @@ https://viz.wtf/
 
 https://r-graph-gallery.com/
 
+* Visualization alternatives
+
+https://dominicroye.github.io/blog/2025-12-14-broken-charts/
 <!--
 ## Video lectures
 
