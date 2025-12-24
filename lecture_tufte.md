@@ -28,6 +28,22 @@ Choose a complex dataset and create a series of visualizations that:
 
 # Python Code Example (Tufte Style Visualization)
 
+## Installation
+
+- setup a virtual environment
+
+```bash
+python -m venv venv_viz
+source venv_viz/bin/activate
+```
+
+- install the required packages 
+
+```bash
+pip install -r requirements.txt
+```
+
+## Code
 - If you want to run the notebooks in Colab, you can also use the _Open in Colab_ badge below:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
@@ -116,3 +132,70 @@ plt.grid(axis='y', linestyle=':', alpha=0.5)
 plt.tight_layout()
 plt.show()
 ```
+
+# Advanced Tufte Visualizations
+
+## Slopegraphs
+Slopegraphs are excellent for comparing changes in rank or value between two time points for a list of items.
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Data
+df_slope = pd.DataFrame({
+    'Country': ['A', 'B', 'C', 'D', 'E'],
+    '1990': [10, 30, 20, 50, 40],
+    '2010': [15, 25, 40, 45, 60]
+})
+
+fig, ax = plt.subplots(figsize=(6, 8))
+for i in range(len(df_slope)):
+    ax.plot([1990, 2010], [df_slope.loc[i, '1990'], df_slope.loc[i, '2010']], color='black', marker='o', linewidth=1)
+    ax.text(1990 - 2, df_slope.loc[i, '1990'], f"{df_slope.loc[i, 'Country']} {df_slope.loc[i, '1990']}", ha='right', va='center')
+    ax.text(2010 + 2, df_slope.loc[i, '2010'], f"{df_slope.loc[i, '2010']} {df_slope.loc[i, 'Country']}", ha='left', va='center')
+
+# Remove spines and axes
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+ax.spines['left'].set_visible(False)
+ax.set_xticks([1990, 2010])
+ax.set_yticks([])
+
+ax.set_title("Slopegraph: Changes from 1990 to 2010", loc='left')
+plt.show()
+```
+
+## Sparklines
+Sparklines are word-sized graphics embedded in text, providing a high-resolution view of data without chartjunk.
+
+See `verify_tufte.py` for an example.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+np.random.seed(42)
+data_spark = np.cumsum(np.random.randn(50))
+fig, ax = plt.subplots(figsize=(4, 0.5))
+ax.plot(data_spark, color='blue', linewidth=1)
+ax.plot(len(data_spark)-1, data_spark[-1], marker='o', color='red', markersize=3)
+ax.axis('off')
+plt.show()
+```
+
+# Assignments
+
+## Assignment 3: The Redesign Challenge
+Find a visualization (from news media or a report) that violates Tufte's principles (low data-ink, chartjunk).
+1. Critique it using Tufte's vocabulary.
+2. Write Python code to redesign it into a cleaner, more effective visualization (e.g., a slopegraph or small multiple).
+3. Calculate the Lie Factor if applicable.
+
+## Assignment 4: Lie Factor Calculation
+Calculate the Lie Factor for a misleading chart:
+$$ \text{Lie Factor} = \frac{\text{Size of effect shown in graphic}}{\text{Size of effect in data}} $$
+
+
+
