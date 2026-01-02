@@ -199,3 +199,34 @@ $$ \text{Lie Factor} = \frac{\text{Size of effect shown in graphic}}{\text{Size 
 
 
 
+## Visualization Example for Lie Factor Calculation
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+# Original misleading chart
+data_original = [100, 150]
+sizes_original = [100, 300]  # Exaggerated sizes
+# Redesign chart
+data_redesign = [100, 150]
+sizes_redesign = [100, 150]  # Accurate sizes
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+# Original misleading chart
+ax1.bar(['A', 'B'], sizes_original, color=['blue', 'orange'])
+ax1.set_title('Misleading Chart')
+# Redesign chart
+ax2.bar(['A', 'B'], sizes_redesign, color=['blue', 'orange'])
+ax2.set_title('Redesigned Chart')
+plt.show()
+```
+
+- In this example, the original chart exaggerates the size of the bars, leading to a high Lie Factor. The redesigned chart accurately represents the data, resulting in a Lie Factor of 1.
+
+
+
+
+
+# Best visualizations of 2025
+
+- [Visualizations 2025](https://flowingdata.com/2025/12/31/best-data-visualization-2025/)
