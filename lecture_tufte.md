@@ -230,3 +230,22 @@ plt.show()
 # Best visualizations of 2025
 
 - [Visualizations 2025](https://flowingdata.com/2025/12/31/best-data-visualization-2025/)
+
+
+# Summary
+
+- Data-ink economy — The graphic minimises non-data ink (decorative lines, gratuitous 3D, heavy backgrounds) and uses ink mainly to present data.
+
+- No chartjunk — There are no unnecessary ornaments, redundant gridlines, or distracting decorations that do not improve understanding.
+
+- Accurate representation — Scales, axes, aspect ratios and transformations do not distort the underlying data; claims are supported by the visual evidence.
+
+- Clear labelling & context — Axes, units, legends, titles and sources are present, unambiguous, and placed close to the relevant graphical elements.
+
+- High information density (where appropriate) — The visualisation communicates multiple relevant facets without overwhelming the reader; small multiples or layered encodings are used sensibly.
+
+- Integrated text & graphics — Annotations, captions or callouts are used to explain key patterns or exceptions rather than forcing the reader to infer everything.
+
+- Shows variation & uncertainty — Where relevant, variation (error bars, confidence bands, distributions) is shown rather than hiding uncertainty.
+
+- Readable at a glance & reproducible — The primary message is immediately identifiable and supporting code/notes allow the display to be recreated.
