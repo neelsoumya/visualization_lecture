@@ -232,7 +232,23 @@ plt.show()
 - [Visualizations 2025](https://flowingdata.com/2025/12/31/best-data-visualization-2025/)
 
 
-# Summary
+# 🧩 🚀 Checklist of Tufte's principles
+
+- data-ink economy
+
+- absence of chartjunk
+
+- accurate representation
+
+- clear labelling
+
+- information density
+
+- integrated annotations
+
+
+
+# 🧩 🚀 Summary
 
 - Data-ink economy — The graphic minimises non-data ink (decorative lines, gratuitous 3D, heavy backgrounds) and uses ink mainly to present data.
 
