@@ -37,7 +37,7 @@ https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro
  
 * [Colab Notebook Link on Edward Tufte's principles of data visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/tufte_python.ipynb)
 
-
+* [Lecture on types of plots](types_of_plots.md)
 
 ## Notes
 
