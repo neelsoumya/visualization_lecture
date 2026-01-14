@@ -265,3 +265,6 @@ plt.show()
 - Shows variation & uncertainty — Where relevant, variation (error bars, confidence bands, distributions) is shown rather than hiding uncertainty.
 
 - Readable at a glance & reproducible — The primary message is immediately identifiable and supporting code/notes allow the display to be recreated.
+
+
+
