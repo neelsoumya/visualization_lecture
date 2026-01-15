@@ -39,6 +39,8 @@ https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro
 
 * [Lecture on types of plots](types_of_plots.md)
 
+* [Seaborn plotting library in Python](seaborn.md)
+
 ## Notes
 
 Some notes, mathematical proofs, concepts and activities are here:
