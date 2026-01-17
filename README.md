@@ -41,6 +41,8 @@ https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro
 
 * [Seaborn plotting library in Python](seaborn.md)
 
+* [Colour theory in Python](colour_theory.md)
+
 ## Notes
 
 Some notes, mathematical proofs, concepts and activities are here:
