@@ -2,3 +2,4 @@ seaborn
 matplotlib
 numpy
 pandas
+ipykernel
