@@ -268,3 +268,4 @@ plt.show()
 
 
 
+- [Next: Types of plots](types_of_plots.md)

@@ -300,3 +300,5 @@ import numpy as np
 corr = sns.load_dataset('penguins').select_dtypes('number').corr()
 sns.heatmap(corr, annot=True, cmap='vlag')
 ```
+
+[Next: Colour theory](colour_theory.md)

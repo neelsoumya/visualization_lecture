@@ -141,3 +141,6 @@ Visualizations help turn data into insight. Choosing the right chart depends on:
 
 * Edward Tufte — *The Visual Display of Quantitative Information* (introduce key principles in class)
 
+
+- [Next: Seaborn overview](seaborn.md)
+
