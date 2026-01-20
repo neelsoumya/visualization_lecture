@@ -91,6 +91,11 @@ plt.title('Heatmap with Figure-Ground Principle')
 plt.show()
 ```
 
+## References
+
+- [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
+
+- [Principles of proportional ink]( https://clauswilke.com/dataviz/proportional-ink.html#:~:text=This%20concept%20has%20been%20termed,the%20data%20values%20they%20represent)
 
 <!--
 - [Next: Color Theory in Data Visualization](colour_theory.md)
