@@ -167,3 +167,6 @@ plt.show()
 * **Don't use rainbow/jet** for quantitative scales.
 * Test for **color-blindness** and for **grayscale** readability.
 * Use **redundant encodings** and good labels; color is one channel among many.
+
+
+- [Next: Gestalt Theory in Data Visualization](gestalt_theory.md)

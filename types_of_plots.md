@@ -139,7 +139,7 @@ Visualizations help turn data into insight. Choosing the right chart depends on:
 
 # Further reading / resources
 
-* Edward Tufte — *The Visual Display of Quantitative Information* (introduce key principles in class)
+* Edward Tufte — *The Visual Display of Quantitative Information*
 
 
 - [Next: Seaborn overview](seaborn.md)
