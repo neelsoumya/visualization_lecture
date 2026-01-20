@@ -43,6 +43,8 @@ https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro
 
 * [Colour theory in Python](colour_theory.md)
 
+* [Gestalt theory in data visualization](gestalt_theory.md)
+
 ## Notes
 
 Some notes, mathematical proofs, concepts and activities are here:
