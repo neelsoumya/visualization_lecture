@@ -21,6 +21,8 @@
 
 ## Examples
 
+- [Link to Google Colab notebook with examples](https://github.com/neelsoumya/visualization_lecture/blob/main/gestalt_visualization.ipynb)
+
 - A scatter plot that uses color coding to group related data points, applying the principle of similarity.
 
 ```python
