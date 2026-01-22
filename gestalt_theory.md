@@ -93,12 +93,52 @@ plt.title('Heatmap with Figure-Ground Principle')
 plt.show()
 ```
 
+## 🤔❓ Applications to modern data science
+
+- tSNE and UMAP visualizations often leverage Gestalt principles to help users identify clusters and patterns in high-dimensional data.
+
+- Dashboards and data reporting tools use these principles to create intuitive layouts that facilitate quick comprehension of key metrics.
+
+- Interactive visualizations (_plotly_) often incorporate Gestalt principles to enhance user engagement and understanding, such as through hover effects that highlight related data points.
+
+
+
 ## References
 
 - [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
 
 - [Principles of proportional ink]( https://clauswilke.com/dataviz/proportional-ink.html#:~:text=This%20concept%20has%20been%20termed,the%20data%20values%20they%20represent)
 
+
+- **John Stasko — Visual Perception (CS7450 lecture notes, Georgia Tech)**  
+  https://faculty.cc.gatech.edu/~stasko/7450/16/Notes/perception.pdf
+
+- **Jacques Bertin — Semiology of Graphics (excerpt PDF)**  
+  https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf
+
+- **Alberto Cairo — The Functional Art (sample pages)**  
+  https://ptgmedia.pearsoncmg.com/images/9780321834737/samplepages/0321834739.pdf
+
+- **Preattentive properties & Gestalt perception (lecture slides)**  
+  https://dmice.ohsu.edu/bedricks/courses/cs631_fall_2016/lectures/week2_lec1b.pdf
+
+- **Gestalt Principles in Data Visualization (student paper)**  
+  https://ecommons.luc.edu/cgi/viewcontent.cgi?article=1786&context=ures
+
+- **Exploring the use of Gestalt’s principles (ResearchGate / case study)**  
+  https://www.researchgate.net/publication/328571584_Exploring_the_Use_of_Gestalt%27s_Principles_in_Improving_the_Visualization_User_Experience_and_Comprehension_of_COBie_Data_Extension
+
+- **Interaction Design Foundation — What are the Gestalt Principles?**  
+  https://www.interaction-design.org/literature/topics/gestalt-principles
+
+- **Principles of Data Visualization — Artificium (PDF)**  
+  https://artificium.us/lessons/54.info-viz/l-54-103-build-explntry-viz/resources/principles-of-data-visualization.pdf
+
+- **Lecture: Pre-attentive attributes & Gestalt (PDF)**  
+  https://bbrejova.github.io/viz/pdf/L09_Preattentive_and_Gestalt.pdf
+
+- **The Gestalt Principles — Data Action Lab (handout PDF)**  
+  https://www.data-action-lab.com/wp-content/uploads/2021/05/ACFO-DV-4.pdf
 
 
 - [Next: Assignment](assignment.md)
