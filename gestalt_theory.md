@@ -73,7 +73,7 @@ plt.show()
 ```python
 import matplotlib.pyplot as plt
 # Sample data
-sizes = [30, 20, 25], 15]
+sizes = [30, 20, 25, 15]
 labels = ['A', 'B', 'C', 'D']
 plt.pie(sizes, labels=labels, startangle=90)
 plt.title('Pie Chart with Closure Principle')
@@ -97,6 +97,8 @@ plt.show()
 
 - tSNE and UMAP visualizations often leverage Gestalt principles to help users identify clusters and patterns in high-dimensional data.
 
+- Also makes interpretation of tSNE plots difficult when these principles are not effectively applied.
+
 - Dashboards and data reporting tools use these principles to create intuitive layouts that facilitate quick comprehension of key metrics.
 
 - Interactive visualizations (_plotly_) often incorporate Gestalt principles to enhance user engagement and understanding, such as through hover effects that highlight related data points.
@@ -114,6 +116,46 @@ plt.show()
     - **Balance and Alignment**: Proper alignment and balance in design contribute to a cohesive and organized appearance, making it easier for viewers to process information.
 
     - **Contrast**: Using contrast effectively can help differentiate between different data points or categories, enhancing clarity.
+
+## Use of colour in data visualization
+
+- Use blue in large regions
+
+- Use red and green in the centers of attention
+
+- 🧩🚀 _Concept_ edges of retina not sensitive to red and green
+
+- Use black, white and yellow in peripheral regions
+
+
+## 🎮 Colour activity
+
+- [Colour activity](https://color.method.ac/)
+
+
+## Glyphs and visual variables
+
+- Visual variables are attributes that can be manipulated to represent data in visualizations. Common visual variables include:
+
+    - **Position**: The location of an element on a chart or graph, often used to represent quantitative data.
+
+    - **Size**: The dimensions of an element, which can indicate magnitude or importance.
+
+    - **Shape**: Different shapes can represent different categories or types of data.
+
+    - **Color**: Color can convey information about categories, values, or intensity.
+
+    - **Orientation**: The angle or direction of an element can provide additional context or meaning.
+
+    - **Texture**: Patterns or textures can differentiate between areas in a visualization.
+
+- Glyphs are visual representations that combine multiple visual variables to encode complex data. Examples of glyphs include:  
+
+    - **Chernoff Faces**: Use facial features (like eyes, nose, mouth) to represent multivariate data.
+
+    - **Star Plots**: Use radial lines extending from a central point to represent multiple variables.
+
+    - **Glyph Maps**: Combine position with other visual variables to represent data on geographical maps.
 
 
 ## Resources
