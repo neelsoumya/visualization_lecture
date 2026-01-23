@@ -9,3 +9,6 @@ You can use any dataset of your choice. Here are some suggestions:
  - [Polity dataset](https://www.systemicpeace.org/inscrdata.html)
  - [Gapminder dataset](https://www.gapminder.org/data/)
  
+ ## Report
+
+ Write a cogent report on your data visualization.

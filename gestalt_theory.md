@@ -101,9 +101,22 @@ plt.show()
 
 - Interactive visualizations (_plotly_) often incorporate Gestalt principles to enhance user engagement and understanding, such as through hover effects that highlight related data points.
 
+## Visual perception principles
+
+- Gestalt principles are part of a broader set of visual perception principles that influence how we interpret visual information. Other important principles include:
+
+    - **Preattentive Processing**: Certain visual properties (like color, shape, and size) are processed rapidly by the human brain before conscious attention is directed. Effective data visualizations leverage preattentive attributes to highlight important information quickly.
+
+    - **Color Theory**: The use of color can significantly impact the readability and interpretability of data visualizations. Understanding color relationships (complementary, analogous, etc.) helps in creating visually appealing and effective graphics.
+
+    - **Visual Hierarchy**: Establishing a clear visual hierarchy through size, color, and placement helps guide the viewer's eye to the most important elements first.
+
+    - **Balance and Alignment**: Proper alignment and balance in design contribute to a cohesive and organized appearance, making it easier for viewers to process information.
+
+    - **Contrast**: Using contrast effectively can help differentiate between different data points or categories, enhancing clarity.
 
 
-## References
+## Resources
 
 - [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
 
@@ -111,34 +124,34 @@ plt.show()
 
 
 - **John Stasko — Visual Perception (CS7450 lecture notes, Georgia Tech)**  
-  https://faculty.cc.gatech.edu/~stasko/7450/16/Notes/perception.pdf
+  [link](https://faculty.cc.gatech.edu/~stasko/7450/16/Notes/perception.pdf)
 
 - **Jacques Bertin — Semiology of Graphics (excerpt PDF)**  
-  https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf
+  [link](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf)
 
 - **Alberto Cairo — The Functional Art (sample pages)**  
-  https://ptgmedia.pearsoncmg.com/images/9780321834737/samplepages/0321834739.pdf
+  [link](https://ptgmedia.pearsoncmg.com/images/9780321834737/samplepages/0321834739.pdf)
 
 - **Preattentive properties & Gestalt perception (lecture slides)**  
-  https://dmice.ohsu.edu/bedricks/courses/cs631_fall_2016/lectures/week2_lec1b.pdf
+  [link](https://dmice.ohsu.edu/bedricks/courses/cs631_fall_2016/lectures/week2_lec1b.pdf)
 
 - **Gestalt Principles in Data Visualization (student paper)**  
-  https://ecommons.luc.edu/cgi/viewcontent.cgi?article=1786&context=ures
+  [link](https://ecommons.luc.edu/cgi/viewcontent.cgi?article=1786&context=ures)
 
 - **Exploring the use of Gestalt’s principles (ResearchGate / case study)**  
-  https://www.researchgate.net/publication/328571584_Exploring_the_Use_of_Gestalt%27s_Principles_in_Improving_the_Visualization_User_Experience_and_Comprehension_of_COBie_Data_Extension
+  [link](https://www.researchgate.net/publication/328571584_Exploring_the_Use_of_Gestalt%27s_Principles_in_Improving_the_Visualization_User_Experience_and_Comprehension_of_COBie_Data_Extension)
 
 - **Interaction Design Foundation — What are the Gestalt Principles?**  
-  https://www.interaction-design.org/literature/topics/gestalt-principles
+  [link](https://www.interaction-design.org/literature/topics/gestalt-principles)
 
 - **Principles of Data Visualization — Artificium (PDF)**  
-  https://artificium.us/lessons/54.info-viz/l-54-103-build-explntry-viz/resources/principles-of-data-visualization.pdf
+  [link](https://artificium.us/lessons/54.info-viz/l-54-103-build-explntry-viz/resources/principles-of-data-visualization.pdf)
 
 - **Lecture: Pre-attentive attributes & Gestalt (PDF)**  
-  https://bbrejova.github.io/viz/pdf/L09_Preattentive_and_Gestalt.pdf
+  [link](https://bbrejova.github.io/viz/pdf/L09_Preattentive_and_Gestalt.pdf)
 
 - **The Gestalt Principles — Data Action Lab (handout PDF)**  
-  https://www.data-action-lab.com/wp-content/uploads/2021/05/ACFO-DV-4.pdf
+  [link](https://www.data-action-lab.com/wp-content/uploads/2021/05/ACFO-DV-4.pdf)
 
 
 - [Next: Assignment](assignment.md)

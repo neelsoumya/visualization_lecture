@@ -9,33 +9,23 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 ## Talks
 
-* Talk on visualization
-
-https://www.youtube.com/watch?v=Bhv46UYAkg0
+* [Talk on visualization](https://www.youtube.com/watch?v=Bhv46UYAkg0)
   
 
-* Talk on unsupervised learning
-
-https://youtu.be/VMrSHp-sCHo?si=P_FOEZ6pJHy9xJf6
+* [Talk on unsupervised learning](https://youtu.be/VMrSHp-sCHo?si=P_FOEZ6pJHy9xJf6)
 
 ## Slides
 
-* Slides on visualization are here:
+* [Slides on visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture.pdf)
 
-https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture.pdf
-
-Short version
-
-https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture_SHORT.pdf
+[Short version](https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture_SHORT.pdf)
 
 
-* Slides on unsupervised learning are here:
-
-https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx
+* [Slides on unsupervised learning](https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx)
 
 * [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
  
-* [Colab Notebook Link on Edward Tufte's principles of data visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/tufte_python.ipynb)
+* [Colab Notebook on Edward Tufte's principles of data visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/tufte_python.ipynb)
 
 * [Lecture on types of plots](types_of_plots.md)
 
