@@ -133,7 +133,7 @@ plt.show()
 - [Colour activity](https://color.method.ac/)
 
 
-## Glyphs and visual variables
+## 💡 Glyphs and visual variables
 
 - Visual variables are attributes that can be manipulated to represent data in visualizations. Common visual variables include:
 
@@ -157,12 +157,45 @@ plt.show()
 
     - **Glyph Maps**: Combine position with other visual variables to represent data on geographical maps.
 
+    - [Glyph maps by Hadley Wickham](https://vita.had.co.nz/papers/glyph-maps.pdf)
+
+
+## Change blindness
+- Change blindness is a phenomenon where significant changes in a visual scene go unnoticed by the observer.
+
+- This occurs because our attention is limited, and we often focus on specific elements while ignoring others.
+
+- In data visualization, change blindness can impact how effectively information is communicated. 
+
+- If important changes in data are not visually highlighted, viewers may miss critical insights.
+- To mitigate change blindness in data visualizations, designers can use techniques such as:
+    - **Animation**: Smooth transitions can help draw attention to changes over time.
+    - **Highlighting**: Using color or size changes to emphasize important data points.
+    - **Annotations**: Adding text or markers to indicate significant changes.
+
+
+- 🎮💡🛠️ Watch the following [videos](https://www.youtube.com/watch?v=vJG698U2Mvo&list=PLB228A1652CD49370) to see examples of [change blindness](http://www.simonslab.com/videos.html).
+
+
+## Optical illusions
+
+- Optical illusions are visual phenomena that deceive the eye and brain, leading to misinterpretations of visual information.
+- In data visualization, optical illusions can inadvertently affect how data is perceived, potentially leading to misunderstandings or misinterpretations.
+- Common types of optical illusions that can impact data visualization include:
+    - **Ambiguous Illusions**: Images that can be interpreted in multiple ways, which can lead to confusion in data representation.
+    - **Distorting Illusions**: Visual elements that distort perception, such as misleading scales or axes.
+    - **Paradoxical Illusions**: Images that create impossible scenarios, which can confuse viewers.
+- To avoid optical illusions in data visualization, designers should:
+    - Use clear and consistent scales.
+    - Avoid overly complex designs that can confuse viewers.
+    - Test visualizations with diverse audiences to ensure clarity.
+
 
 ## Resources
 
 - [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
 
-- [Principles of proportional ink]( https://clauswilke.com/dataviz/proportional-ink.html#:~:text=This%20concept%20has%20been%20termed,the%20data%20values%20they%20represent)
+- [Principles of proportional ink](https://clauswilke.com/dataviz/proportional-ink.html#:~:text=This%20concept%20has%20been%20termed,the%20data%20values%20they%20represent)
 
 
 - **John Stasko — Visual Perception (CS7450 lecture notes, Georgia Tech)**  
