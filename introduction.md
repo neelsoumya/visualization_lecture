@@ -40,7 +40,7 @@ By the end of the course students should be able to:
   * OSF teaching resources and activities: [https://osf.io/mnh8d/](https://osf.io/mnh8d/)
   * Teaching resources on the mathematics of dimensionality reduction: [https://www.researchgate.net/publication/375186575_Everything_you_wanted_to_know_about_the_mathematics_of_dimensionality_reduction_and_visualization_but_were_afraid_to_ask_Teaching_resources_and_activities](https://www.researchgate.net/publication/375186575_Everything_you_wanted_to_know_about_the_mathematics_of_dimensionality_reduction_and_visualization_but_were_afraid_to_ask_Teaching_resources_and_activities)
 
-<!-->
+<!--
 **Activities:** derive PCA from first principles (covariance, eigen-decomposition), small proof exercises, visualise principal components on simple 2D/3D datasets.
 -->
 **Activities:** Visualise principal components on simple 2D/3D datasets.
