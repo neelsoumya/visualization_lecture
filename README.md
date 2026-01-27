@@ -39,6 +39,8 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 * [Gestalt theory in data visualization](gestalt_theory.md)
 
+* [Data storytelling](data_storytelling.md)
+
 * [Assignment on visualization](assignment.md)
 
 ## Notes
