@@ -74,6 +74,10 @@ https://www.popularmechanics.com/science/math/a27737/visualize-higher-dimensions
 
 https://youtu.be/zwAD6dRSVyI
 
+* University of Cambridge data visualization resources
+
+https://cambiotraining.github.io/visual-data-communication/materials/functions-and-objects.html
+
 * Different kinds of cartographic projections
 
 https://whereexactlymaps.com/blogs/articles/an-introduction-to-map-projections
