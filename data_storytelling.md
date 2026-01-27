@@ -21,3 +21,5 @@ This module focuses on the principles and practices of effective data storytelli
 * **Tutorials:** R (ggplot2, plotly) or Python (matplotlib, seaborn)
 * **Activities:** Hands-on coding sessions to create interactive visualisations and dashboards for storytelling.
 
+
+- [Next: Assignment](assignment.md)
