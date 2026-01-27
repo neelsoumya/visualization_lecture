@@ -1,6 +1,20 @@
 # Edward Tufte's recommendations for data visualization
 
-Edward Tufte is a renowned expert in the field of data visualization and information design. His work emphasizes clarity, precision, and efficiency in presenting data. Here are some of his key recommendations for effective data visualization:
+* [Talk on visualization](https://www.youtube.com/watch?v=Bhv46UYAkg0)
+  
+
+* [Talk on unsupervised learning](https://youtu.be/VMrSHp-sCHo?si=P_FOEZ6pJHy9xJf6)
+
+## Slides
+
+* [Slides on visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture.pdf)
+
+* [Short version](https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture_SHORT.pdf)
+
+
+## Overview
+
+_Edward Tufte_ is a renowned expert in the field of data visualization and information design. His work emphasizes clarity, precision, and efficiency in presenting data. Here are some of his key recommendations for effective data visualization:
 1. **Maximize Data-Ink Ratio**: Tufte advocates for minimizing non-essential ink in visualizations. This means removing any elements that do not convey important information, such as excessive gridlines, borders, or decorative graphics.
 2. **Avoid Chartjunk**: He warns against "chartjunk," which refers to unnecessary or distracting elements in a chart that do not improve understanding. This includes things like 3D effects, excessive colors, and ornamental graphics.
 3. **Use Small Multiples**: Tufte suggests using small multiples (a series of similar graphs or charts) to compare different datasets or variables. This allows viewers to easily see patterns and differences across multiple dimensions.

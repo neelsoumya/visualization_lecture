@@ -24,6 +24,7 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 * [Slides on unsupervised learning](https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx)
 
+
 ## Course content
 
 * [Introduction to data visualization](introduction.md)

@@ -9,6 +9,7 @@ You can use any dataset of your choice. Here are some suggestions:
  - [Polity dataset](https://www.systemicpeace.org/inscrdata.html)
  - [Gapminder dataset](https://www.gapminder.org/data/)
  
+ 
  ## Report
 
- Write a cogent report on your data visualization.
+ Write a cogent report on your data visualization. The report should include a narrative that explains the insights derived from the visualizations.
