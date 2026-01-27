@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
+![Course banner](images/course_image.png)
 
 ## Introduction
 
