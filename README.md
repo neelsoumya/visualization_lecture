@@ -23,6 +23,10 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 * [Slides on unsupervised learning](https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx)
 
+## Course content
+
+* [Introduction to data visualization](introduction.md)
+
 * [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
  
 * [Colab Notebook on Edward Tufte's principles of data visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/tufte_python.ipynb)
