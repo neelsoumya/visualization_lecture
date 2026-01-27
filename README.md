@@ -18,7 +18,7 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 * [Slides on visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture.pdf)
 
-[Short version](https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture_SHORT.pdf)
+* [Short version](https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture_SHORT.pdf)
 
 
 * [Slides on unsupervised learning](https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx)

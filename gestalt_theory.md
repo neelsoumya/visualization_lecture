@@ -191,6 +191,42 @@ plt.show()
     - Test visualizations with diverse audiences to ensure clarity.
 
 
+## Retinal variables
+
+- Jacques Bertin — Semiology of Graphics (excerpt PDF)
+  [link](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf)
+
+- Depth perception in 2D visualizations can be enhanced using retinal variables.
+
+- apparent movement of objects when the observer changes position
+
+- a decrease in the size of object
+
+- a decrease in the intensity of color
+
+- a change in the texture or pattern of an object
+
+- a change in contrast between an object and its background
+
+- a change in orientation or shape of an object
+
+
+
+- Retinal variables are visual properties that can be manipulated to convey information in data visualizations. They include:
+
+    - **Color Hue**: Different colors can represent different categories or types of data.
+
+    - **Color Intensity**: The brightness or saturation of a color can indicate magnitude or importance.
+
+    - **Size**: The dimensions of an element can represent quantitative values.
+
+    - **Shape**: Different shapes can be used to differentiate between categories.
+
+    - **Orientation**: The angle or direction of an element can provide additional context.
+
+    - **Texture/Pattern**: Patterns can be used to distinguish between areas in a visualization.
+
+
 ## Resources
 
 - [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
