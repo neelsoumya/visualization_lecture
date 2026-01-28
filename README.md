@@ -29,6 +29,8 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 * [Introduction to data visualization](introduction.md)
 
+* [Introduction to Python (refresher)](https://cambiotraining.github.io/ml-unsupervised/materials/python_refresher.html)
+
 * [Basic data visualization with Python](visual_data_communication_python.md)
 
 * [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
