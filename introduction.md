@@ -161,5 +161,8 @@ By the end of the course students should be able to:
 
 * Great talks and recorded lectures (playlist): [https://www.youtube.com/watch?v=iipVlV4I_Vg&list=PLB2SCq-tZtVnXalwtfVPcjwy0xJbu-btN&index=4](https://www.youtube.com/watch?v=iipVlV4I_Vg&list=PLB2SCq-tZtVnXalwtfVPcjwy0xJbu-btN&index=4)
 
+
+- [Next: Basic data visualization with Python](visual_data_communication_python.md)
+
 ---
 
