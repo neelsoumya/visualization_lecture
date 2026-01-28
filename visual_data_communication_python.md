@@ -28,7 +28,9 @@ This mirrors R’s assignment (`age <- 21`) but uses `=` in Python. Python suppo
 
 Common Python data structures: lists, dictionaries, and `pandas.DataFrame` for tabular data (similar to R’s `data.frame` / tibble). A `DataFrame` lets you work with columns and rows.
 
-Example — read a CSV of Darwin’s finch measurements:
+- Download the data from the following link and save it in a new folder named `data` in your working directory: [DATA](https://github.com/cambiotraining/visual-data-communication/raw/main/data_visual-data-communication.zip)
+
+- Example — read a CSV of Darwin’s finch measurements:
 
 ```python
 import pandas as pd
@@ -386,6 +388,6 @@ Use _grey_ to de-emphasise background data and highlight focal elements. Strateg
 
 # References
 
-- Concepts adapted from: Visual Data Communication (Cambio Training)[https://cambiotraining.github.io/visual-data-communication/]
+- Concepts adapted from: Visual Data Communication [Cambio Training](https://cambiotraining.github.io/visual-data-communication/)
 
 - [Next: Edward Tufte's principles of visualization](lecture_tufte.md)

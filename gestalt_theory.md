@@ -191,12 +191,12 @@ plt.show()
     - Test visualizations with diverse audiences to ensure clarity.
 
 
-## Retinal variables
+## 🤔❓Retinal variables
 
 - Jacques Bertin — Semiology of Graphics (excerpt PDF)
   [link](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf)
 
-- Depth perception in 2D visualizations can be enhanced using retinal variables.
+- ⚠️ _NOTE_ Depth perception in 2D visualizations can be enhanced using retinal variables.
 
 - apparent movement of objects when the observer changes position
 
@@ -212,7 +212,7 @@ plt.show()
 
 
 
-- Retinal variables are visual properties that can be manipulated to convey information in data visualizations. They include:
+- 🤔❓_Retinal variables_ are visual properties that can be manipulated to convey information in data visualizations. They include:
 
     - **Color Hue**: Different colors can represent different categories or types of data.
 
@@ -226,6 +226,14 @@ plt.show()
 
     - **Texture/Pattern**: Patterns can be used to distinguish between areas in a visualization.
 
+
+## Associative vs. Dissociative visualizations
+
+- [Page 7 of PDF here](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf)
+
+- Associative visualizations use visual elements that are closely related to the data being represented, making it easier for viewers to understand the information. Examples include using icons or images that directly relate to the data.
+
+- Dissociative visualizations use abstract or unrelated visual elements, which may require viewers to interpret the data without direct visual cues. Examples include using geometric shapes or colors that do not have an inherent connection to the data.
 
 ## Resources
 
