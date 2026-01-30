@@ -246,7 +246,7 @@ plt.show()
 
 - The Cause: It usually occurs when points are placed in a high-density, repetitive, or strictly geometric grid. When the spacing between points nears the limits of the eye’s resolution, the brain struggles to process the gaps, leading to a perceived "flicker."
 
-- The "Chartjunk" Factor: Edward Tufte famously categorized this as a form of unnecessary visual clutter. It creates Moire patterns that distract the viewer from the actual data trends.
+- 🤔❓ The _Chartjunk_ Factor: Edward Tufte famously categorized this as a form of unnecessary visual clutter. It creates Moire patterns that distract the viewer from the actual data trends.
 
 ![vibration](images/vibration.png)
 
