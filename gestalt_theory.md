@@ -235,6 +235,21 @@ plt.show()
 
 - Dissociative visualizations use abstract or unrelated visual elements, which may require viewers to interpret the data without direct visual cues. Examples include using geometric shapes or colors that do not have an inherent connection to the data.
 
+
+## Vibratory effect in point representations
+
+- [PDF pg 10](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf)
+
+- In data visualization, the vibratory effect is that annoying optical illusion where a dense collection of points or lines seems to shimmer, shake, or "vibrate" on the screen. It’s essentially the visual equivalent of static noise.
+
+- Here is the quick breakdown of why it happens and why it matters:
+
+- The Cause: It usually occurs when points are placed in a high-density, repetitive, or strictly geometric grid. When the spacing between points nears the limits of the eye’s resolution, the brain struggles to process the gaps, leading to a perceived "flicker."
+
+- The "Chartjunk" Factor: Edward Tufte famously categorized this as a form of unnecessary visual clutter. It creates Moire patterns that distract the viewer from the actual data trends.
+
+
+
 ## Resources
 
 - [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
