@@ -248,6 +248,7 @@ plt.show()
 
 - The "Chartjunk" Factor: Edward Tufte famously categorized this as a form of unnecessary visual clutter. It creates Moire patterns that distract the viewer from the actual data trends.
 
+![vibration](images/vibration.png)
 
 
 ## Resources
