@@ -229,7 +229,7 @@ plt.show()
 
 ## Associative vs. Dissociative visualizations
 
-- [Page 7 of PDF here](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf)
+- [Page 7 of PDF here](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf) - _Semiology of Graphics_ by Jacques Bertin
 
 - Associative visualizations use visual elements that are closely related to the data being represented, making it easier for viewers to understand the information. Examples include using icons or images that directly relate to the data.
 
@@ -238,7 +238,7 @@ plt.show()
 
 ## Vibratory effect in point representations
 
-- [PDF pg 10](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf)
+- [PDF pg 10](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf) - _Semiology of Graphics_ by Jacques Bertin
 
 - In data visualization, the vibratory effect is that annoying optical illusion where a dense collection of points or lines seems to shimmer, shake, or "vibrate" on the screen. It’s essentially the visual equivalent of static noise.
 
@@ -249,6 +249,19 @@ plt.show()
 - 🤔❓ The _Chartjunk_ Factor: Edward Tufte famously categorized this as a form of unnecessary visual clutter. It creates Moire patterns that distract the viewer from the actual data trends.
 
 ![vibration](images/vibration.png)
+
+
+## Orientation variation
+
+[page 14 of PDF here](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf) - _Semiology of Graphics_ by Jacques Bertin
+
+- _Orientation_ of symbols matter.
+
+- Limit the number of categories of orientation
+
+- Example below
+
+![chaos in orientation](images/orientation.png)
 
 
 ## Resources
