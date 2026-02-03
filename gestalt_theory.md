@@ -259,7 +259,7 @@ plt.show()
 
 - Limit the number of categories of orientation
 
-- Example below
+- See diagram below
 
 ![chaos in orientation](images/orientation.png)
 
