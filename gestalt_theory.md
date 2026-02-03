@@ -265,7 +265,7 @@ plt.show()
 
 - Does this remind you of an ancient art/writing form?
 
-- 🎉 🥳 Here is a fun image (AI generated of course) of what data visualization may have looked like in ancient Egypt
+- 🎉 🥳 Here is a fun image (AI generated of course) of what data visualization may have looked like in ancient Egypt!
 
 ![Ancient data science](images/hieroglyphics.png)
 
