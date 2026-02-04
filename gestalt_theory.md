@@ -272,6 +272,18 @@ plt.show()
 - Still intrigued? Read this short [writeup on the similarity between data visualization and hieroglyphics](https://www.researchgate.net/publication/400396829_The_Scribe_and_the_Data_Scientist_A_4000-Year_Quest_to_Impose_Order_on_Information_Chaos)
 
 
+## Shape variation
+
+- There are infinite shapes
+
+- Shape variation is _associative_
+
+- Shape variation can be used to reveal similar elements
+
+- Shape variation is not _selective_ i.e. cannot be used to answer where is a similar shape in a different region
+
+- _Concept_ 🧩🚀 The meaning of a symbol becomes familiar to us only through habit.
+
 
 ## Resources
 
