@@ -3,8 +3,6 @@
 * [Talk on visualization](https://www.youtube.com/watch?v=Bhv46UYAkg0)
   
 
-* [Talk on unsupervised learning](https://youtu.be/VMrSHp-sCHo?si=P_FOEZ6pJHy9xJf6)
-
 ## Slides
 
 * [Slides on visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/visualization_lecture.pdf)
