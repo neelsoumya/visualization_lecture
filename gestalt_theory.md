@@ -306,7 +306,7 @@ Learn how the nature of your data (nominal, ordinal, interval, or ratio) dictate
 Explore how cultural associations and the way we frame "signs" can subtly influence or even mislead an audience.
 
 
-Jacques Bertin, a French cartographer, changed the way we think about charts in 1967 when he published *Sémiologie Graphique*. He proposed that every data visualization is built from basic **marks** (points 📍, lines 📏, or areas 🟦) that we change using specific **visual variables**.
+_Jacques Bertin_, a French cartographer, changed the way we think about charts in 1967 when he published *Sémiologie Graphique*. He proposed that every data visualization is built from basic **marks** (points 📍, lines 📏, or areas 🟦) that we change using specific **visual variables**.
 
 Think of these variables as the "alphabet" of your visualization. Just as letters form words, these variables form the "signs" that readers decode to understand your data.
 
