@@ -306,6 +306,41 @@ Learn how the nature of your data (nominal, ordinal, interval, or ratio) dictate
 Explore how cultural associations and the way we frame "signs" can subtly influence or even mislead an audience.
 
 
+Jacques Bertin, a French cartographer, changed the way we think about charts in 1967 when he published *Sémiologie Graphique*. He proposed that every data visualization is built from basic **marks** (points 📍, lines 📏, or areas 🟦) that we change using specific **visual variables**.
+
+Think of these variables as the "alphabet" of your visualization. Just as letters form words, these variables form the "signs" that readers decode to understand your data.
+
+### The Original 7 Variables
+
+Bertin identified seven primary ways we can vary a mark to convey meaning:
+
+* **Position** 📍: Where the mark sits on the page (x and y coordinates). This is generally considered the most powerful variable for human perception.
+* **Size** 📏: How big or small the mark is (length, area, or volume). Our brains naturally associate "bigger" with "more."
+* **Value** 🌓: The relative lightness or darkness of a color (grayscale). This is excellent for showing ranges or intensity.
+* **Texture** 🏁: The pattern within a mark (e.g., stripes vs. dots).
+* **Color (Hue)** 🎨: The actual color used (red, blue, green). This is very effective for showing different categories.
+* **Orientation** 📐: The angle of a line or shape (e.g., horizontal vs. vertical).
+* **Shape** 🔺: The geometric form of the mark (circle, square, triangle).
+
+---
+
+### How Our Brains Process These Signs
+
+_Concept_: 🧩🚀 Not all variables are created equal. Some are better at showing **differences** (like Color Hue), while others are better at showing **amounts** (like Size).
+
+If you use the "wrong" variable for your data—like using different shapes to represent "How much money was spent"—the viewer's brain has to work much harder to decode the sign.
+
+### 🎮🛠️ Exercise
+
+To see how this works in practice, let's imagine you are designing a map of a city. You want to show two things:
+
+1. **Where the parks are located.**
+2. **How many people visit each park per day.**
+
+Which visual variable would you choose to represent the **number of visitors** at each park, and why?
+
+
+
 ## Resources
 
 - [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
