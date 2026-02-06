@@ -285,6 +285,27 @@ plt.show()
 - _Concept_ 🧩🚀 The meaning of a symbol becomes familiar to us only through habit.
 
 
+## 🤔❓ Semiotics of data visualization
+
+Semiotics is the study of **signs** 🪧 and **symbols** 🧩 and how they communicate meaning. When we apply this to data visualization, we are looking at how visual marks (like points, lines, and areas) serve as "signs" for data values.
+
+At its core, visual semiotics involves three main components:
+
+1. **The Signifier** 🎨: The physical form of the sign (e.g., a red bar on a chart).
+2. **The Signified** 📊: The concept or data the sign represents (e.g., "Company Expenses").
+3. **The Code** 📖: The set of rules that allow a viewer to connect the two (e.g., "longer bars represent larger amounts").
+
+By understanding these relationships, we can design visualizations that are more intuitive and less likely to be misinterpreted.
+
+
+1. **Bertin's Visual Variables** 📐
+Discover the "alphabet" of data visualization—size, value, texture, color, orientation, and shape—and how they function as signs.
+2. **Levels of Measurement** 🔢
+Learn how the nature of your data (nominal, ordinal, interval, or ratio) dictates which visual signs are the most effective.
+3. **Visual Rhetoric & Context** 🏛️
+Explore how cultural associations and the way we frame "signs" can subtly influence or even mislead an audience.
+
+
 ## Resources
 
 - [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
