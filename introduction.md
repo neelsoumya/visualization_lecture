@@ -28,6 +28,8 @@ By the end of the course students should be able to:
 
 * Implement Aesthetic Precision: Develop visualizations that are not only functionally accurate but also aesthetically professional, utilizing principles of color theory, typography, and visual hierarchy.
 
+* Integrity & Ethics: A visualization can lie just as easily as a bug can crash a program. We will study "Lie Factors" and how to avoid misleading your audience through truncated axes or improper scaling.
+
 * Critically evaluate visualisations for clarity, integrity and potential misleading elements.
 * Implement reproducible visual analysis workflows (R / RMarkdown / Tufte-style reports).
 * Recreate canonical statistical graphics (e.g. Minard) and modern high-dimensional visualisations (t-SNE, heatmaps).
