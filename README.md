@@ -33,6 +33,8 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 * [Basic data visualization with Python](visual_data_communication_python.md)
 
+* [Exercises in Python on public data](data/README.md) and [here](data_visualization_exercises.ipynb)
+
 * [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
  
 * [Colab Notebook on Edward Tufte's principles of data visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/tufte_python.ipynb)
