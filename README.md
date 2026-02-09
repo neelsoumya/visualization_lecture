@@ -27,7 +27,7 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 ## Course content
 
-* [Introduction to data visualization](introduction.md)
+* [Introduction to data visualization/learning objectives](introduction.md)
 
 * [Introduction to Python (refresher)](https://cambiotraining.github.io/ml-unsupervised/materials/python_refresher.html)
 
