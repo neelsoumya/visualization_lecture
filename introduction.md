@@ -4,6 +4,12 @@
 
 Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data.
 
+n a world drowning in data, the ability to process information is common, but the ability to communicate it is a superpower. For a Computer Science professional, data visualization is the bridge between back-end complexity and front-end decision-making.
+
+## Summary
+
+This module moves beyond simply "making charts." We will explore the cognitive science of how humans perceive visual information and the technical frameworks required to build scalable, interactive, and honest representations of data. You will learn to stop viewing visualization as an "afterthought" and start seeing it as a critical component of the software development lifecycle.
+
 **Course**: Visualization in Data Science (Lecture Series)
 
 **Purpose.** This introduction collects the mathematical foundations, practical examples, code resources and project ideas you’ll need for a lecture series that teaches how to think about, design, and implement effective visualisations in data science.
@@ -14,7 +20,14 @@ Data visualization is the graphical representation of information and data. By u
 
 By the end of the course students should be able to:
 
-* Explain core mathematical ideas behind dimensionality reduction and geometric intuitions used in visualization.
+* Define the Strategic Purpose: Articulate the specific objectives of a visualization (e.g., exploratory vs. explanatory) and how it serves the broader goals of a project.
+
+* Architect Visual Solutions: Select optimal visualization techniques by analyzing the dimensionality and complexity of data structures (multivariate, temporal, geospatial, etc.).
+
+* Design for the Audience: Tailor visual complexity and interactivity based on the technical literacy and needs of the end-user.
+
+* Implement Aesthetic Precision: Develop visualizations that are not only functionally accurate but also aesthetically professional, utilizing principles of color theory, typography, and visual hierarchy.
+
 * Critically evaluate visualisations for clarity, integrity and potential misleading elements.
 * Implement reproducible visual analysis workflows (R / RMarkdown / Tufte-style reports).
 * Recreate canonical statistical graphics (e.g. Minard) and modern high-dimensional visualisations (t-SNE, heatmaps).
