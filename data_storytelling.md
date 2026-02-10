@@ -143,4 +143,126 @@ Students should be graded not just on the code, but on their **annotations**.
 * **Stakeholder Empathy:** If you were the Head of Marketing, which chart would make you want to sign off on a budget increase?
 
 
+## Exercise Solution
+
+This model solution focuses on **Explanatory Data Viz**. Instead of just showing the data, we are going to use "Active Titles" and annotations to guide the stakeholder’s eye.
+
+Below is the Python code using **Seaborn** and **Matplotlib**. You can share this with your students as the "Goal" they should strive for.
+
+---
+
+### 🎮🛠️ The Data Preparation
+
+First, we ensure the environment is set up and the "Villain" and "Hero" are baked into the data.
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Set the storytelling theme
+sns.set_theme(style="white")
+plt.rcParams['font.family'] = 'sans-serif'
+
+# 1. Setup (Data Generation)
+np.random.seed(42)
+n_users = 1000
+data = {
+    'Subscription_Type': np.random.choice(['Basic', 'Premium', 'Family'], n_users),
+    'Monthly_Charges': np.random.uniform(10, 30, n_users),
+    'Customer_Support_Calls': np.random.poisson(2, n_users),
+    'App_Engagement_Score': np.random.normal(50, 15, n_users),
+    'Churned': np.random.choice([0, 1], n_users, p=[0.7, 0.3])
+}
+df = pd.DataFrame(data)
+
+# Inject the 'Villain': High churn for Basic users with >3 support calls
+df.loc[(df['Subscription_Type'] == 'Basic') & (df['Customer_Support_Calls'] > 3), 'Churned'] = 1
+# Inject the 'Hero': High engagement prevents churn
+df.loc[df['App_Engagement_Score'] > 75, 'Churned'] = 0
+
+```
+
+---
+
+### Chapter 1: Identifying the Villain
+
+**The Story:** We aren't losing everyone; we are specifically failing our Basic tier users who need help.
+
+```python
+# Create a pivot table for the heatmap
+heatmap_data = df.groupby(['Subscription_Type', 'Customer_Support_Calls'])['Churned'].mean().unstack()
+
+plt.figure(figsize=(10, 5))
+sns.heatmap(heatmap_data, annot=True, cmap='Reds', fmt=".1f", cbar=False)
+
+# Storytelling elements
+plt.title("THE VILLAIN: Support Friction is Killing the 'Basic' Tier", fontsize=16, loc='left', pad=20)
+plt.xlabel("Number of Customer Support Calls")
+plt.ylabel("Subscription Plan")
+plt.annotate('CRITICAL ZONE:\nBasic users with 4+ calls\nhave a 100% churn rate.', 
+             xy=(5, 0.5), xytext=(7, 0.5),
+             arrowprops=dict(facecolor='black', shrink=0.05))
+plt.show()
+
+```
+
+---
+
+### Chapter 2: Calculating the Stakes
+
+**The Story:** This isn't just a "metric"—it is a direct hit to our monthly revenue.
+
+```python
+# Calculate lost revenue
+lost_revenue = df[df['Churned'] == 1].groupby('Subscription_Type')['Monthly_Charges'].sum()
+
+plt.figure(figsize=(8, 6))
+ax = sns.barplot(x=lost_revenue.index, y=lost_revenue.values, palette=['#ff9999', '#cccccc', '#cccccc'])
+
+# Storytelling elements
+plt.title("THE STAKES: We are losing $1,800+ Monthly in 'Basic' alone", fontsize=16, loc='left', pad=20)
+plt.ylabel("Potential Monthly Revenue Lost ($)")
+plt.xlabel("Subscription Tier")
+sns.despine()
+
+# Add data labels
+for p in ax.patches:
+    ax.annotate(f'${p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()), 
+                ha = 'center', va = 'center', xytext = (0, 9), textcoords = 'offset points', fontweight='bold')
+plt.show()
+
+```
+
+---
+
+### Chapter 3: The Hero’s Arrival
+
+**The Story:** High app engagement is our "shield." If we can move users into the app, the "Villain" (support friction) loses its power.
+
+```python
+plt.figure(figsize=(10, 6))
+sns.kdeplot(data=df[df['Churned'] == 0], x='App_Engagement_Score', fill=True, label='Retained', color='teal')
+sns.kdeplot(data=df[df['Churned'] == 1], x='App_Engagement_Score', fill=True, label='Churned', color='red')
+
+# Storytelling elements
+plt.title("THE HERO: High App Engagement is a Churn Vaccine", fontsize=16, loc='left', pad=20)
+plt.axvline(75, color='green', linestyle='--')
+plt.text(76, 0.02, "THE HERO ZONE:\nScores >75 = Zero Churn", color='green', fontweight='bold')
+plt.legend()
+sns.despine()
+plt.show()
+
+```
+
+---
+
+### Key Teaching Points for the Solution
+
+1. **Decluttering**: Notice how we removed the top and right spines (`sns.despine()`) and removed the color bar from the heatmap to keep the focus on the data.
+2. **Color with Intent**: We used **Red** for the Villain/Loss and **Teal/Green** for the Hero/Retention. This uses the stakeholder's existing mental models (Red = Bad, Green = Good).
+3. **The "So What?"**: The titles aren't just labels like "Churn Rate by Tier." They are **conclusions**. A stakeholder could read only the titles and still understand the whole business case.
+
+
 - [Next: Assignment](assignment.md)
