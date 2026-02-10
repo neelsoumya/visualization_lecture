@@ -12,4 +12,4 @@ or [here](https://colab.research.google.com/drive/1Wwwb8t7PACVDi3wkXjky1cg9mG36H
 
 [Open Google Colab](https://colab.research.google.com/)
 
-* All the data is [here](../data/README.md)
+* All the data is [here](https://github.com/neelsoumya/visualization_lecture/tree/main/data)
