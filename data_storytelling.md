@@ -290,6 +290,112 @@ plt.show()
 - High fidelity mockups (controlled experiments)
 
 
+## 🎮 Exercise
+
+Storyboarding for data visualization is like writing a script 📽️ before filming a movie. It helps us map out the **Sequence**—the logical flow of insights—so stakeholders don't get lost between charts. It moves the focus from "how do I code this?" to "what am I trying to say?"
+
+In Python, we can simulate this "sketching" phase by having students create a **Story Skeleton**. Instead of rendering complex charts immediately, they define the "Panels" of their story using a data structure. This ensures the narrative holds up before they spend hours on formatting.
+
+Here are three ways we could structure a Python-based storyboarding exercise:
+
+1. **The Metadata Map 🗺️**: Students write a Python script that defines a `StoryFrame` class. They must "instantiate" 4-5 frames of their story, specifying the **Sequence**, the **Persona** (the "Star Person" 👤 viewing the data), and the **Key Takeaway**.
+2. **The Skeleton Plotter 🦴**: Students use Matplotlib to create "Blank" plots. Instead of data, they use `plt.text()` to describe what the chart *will* show and where the annotations will go. This mimics the **Paper Prototype** 📝 approach.
+3. **The Narrative Audit 📋**: Students take an existing set of charts and write a Python "wrapper" or function that prints out the transition logic between them (e.g., "Because we see [X] in Frame 1, we must investigate [Y] in Frame 2").
+
+
+1. **The Metadata Map** (Focus on planning and personas)
+2. **The Skeleton Plotter** (Focus on visual layout and placeholders)
+3. **The Narrative Audit** (Focus on flow and transitions)
+
+A **Narrative Audit** focuses on the "connective tissue" between your data visualizations. In storyboarding, this ensures that the transition from one chart to the next feels like a logical progression rather than a random jump.
+
+Think of it like a comic strip 🎞️: if Panel A shows a character at home and Panel B shows them on Mars, the reader needs a "transition" panel (the rocket ship 🚀) to understand how they got there. In data, this means explaining why a specific insight in Chart 1 leads us to investigate the metric in Chart 2.
+
+### Exercise: The "Logic Leap" Audit
+
+In this exercise, students are given a Python script that generates three correct but disconnected charts. Their job is to perform an "audit" and write the narrative bridge that connects them.
+
+---
+
+### 1. The Setup (The Disconnected Code)
+
+Provide students with this "broken" narrative. The charts are technically fine, but the story is missing.
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+
+# Sample Data: Website Traffic and Sales
+data = pd.DataFrame({
+    'Day': range(1, 8),
+    'Visitors': [1000, 1100, 1050, 1200, 1500, 1600, 1550],
+    'Bounce_Rate': [40, 42, 41, 39, 65, 68, 70],
+    'Conversion_Rate': [5, 5, 4.8, 5.2, 2.1, 1.8, 1.5]
+})
+
+def plot_narrative_gap():
+    # Chart 1: Traffic is growing
+    plt.figure(figsize=(5, 3))
+    sns.lineplot(data=data, x='Day', y='Visitors', marker='o')
+    plt.title("Total Website Visitors")
+    plt.show()
+
+    # Chart 2: Bounce rate spiked
+    plt.figure(figsize=(5, 3))
+    sns.lineplot(data=data, x='Day', y='Bounce_Rate', color='red')
+    plt.title("Bounce Rate Percentage")
+    plt.show()
+
+    # Chart 3: Conversion dropped
+    plt.figure(figsize=(5, 3))
+    sns.barplot(data=data, x='Day', y='Conversion_Rate')
+    plt.title("Sales Conversion Rate")
+    plt.show()
+
+plot_narrative_gap()
+
+```
+
+---
+
+### 2. The Student Task: The Transition Script
+
+Students must create a Python dictionary called `narrative_audit`. For each transition, they must identify:
+
+1. **The Observation**: What did we just see?
+2. **The Question**: What does this make us wonder?
+3. **The Transition**: How does the next chart answer that question?
+
+#### Example Structure for Students:
+
+```python
+narrative_audit = {
+    "Transition_1_to_2": {
+        "Observation": "Traffic is hitting record highs in the second half of the week.",
+        "The Question": "Is this high-volume traffic actually high-quality traffic?",
+        "Bridge": "To find out, we need to look at the **Bounce Rate** to see if people are sticking around."
+    },
+    "Transition_2_to_3": {
+        "Observation": "Bounce rates nearly doubled as traffic increased.",
+        "The Question": "How did this inability to retain users impact our bottom line?",
+        "Bridge": "We will now examine **Conversion Rates** to quantify the cost of this technical friction."
+    }
+}
+
+```
+
+---
+
+### 3. Grading the "Flow"
+
+Instead of checking if the code runs, you are checking for **Causality**.
+
+* **Weak Flow**: "Here is traffic. Next, here is bounce rate."
+* **Strong Flow**: "While traffic is up, the bounce rate suggests we are attracting the wrong audience, which leads to the drop in conversions we see here."
+
+How do you think your students would react to critiquing "broken" stories like this versus building their own from scratch? Would they find it easier to spot logic gaps in someone else's work first?
+
 
 ## Reading Materials
 
