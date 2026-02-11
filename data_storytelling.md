@@ -397,6 +397,13 @@ Instead of checking if the code runs, you are checking for **Causality**.
 How do you think your students would react to critiquing "broken" stories like this versus building their own from scratch? Would they find it easier to spot logic gaps in someone else's work first?
 
 
+## A bad diagram (how not to communicate)
+
+!(Complex diagram)[images/complex_diagram.png]
+
+- 🥳 2 experts might figure it out, but the rest of the 8 billion people? 
+
+
 ## Reading Materials
 
 - [The User Experience](http://www.jjg.net/elements/pdf/elements_ch02.pdf
