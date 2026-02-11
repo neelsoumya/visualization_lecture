@@ -403,6 +403,8 @@ How do you think your students would react to critiquing "broken" stories like t
 
 - 🥳 2 experts might figure it out, but the rest of the 8 billion people? 
 
+- As shown in the figure below, overly complex visuals can fail to communicate outside a small expert audience.
+
 
 ## Reading Materials
 
