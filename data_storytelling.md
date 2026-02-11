@@ -265,4 +265,36 @@ plt.show()
 3. **The "So What?"**: The titles aren't just labels like "Churn Rate by Tier." They are **conclusions**. A stakeholder could read only the titles and still understand the whole business case.
 
 
+## Storyboarding
+
+[Video by Scott Klemmer on storyboards](https://youtu.be/z4glsttyxw8?si=-oaFUFP8wTZRiz--)
+
+- 🤔 comic strip: show flow, how does user figure in this?
+
+- _star people_: how to draw people
+
+- Sequence: what steps are involved?
+
+- Helps get stakeholders on the same page.
+
+- Here is an example of a storyboard
+
+![story](images/storyboard.png)
+
+- 🎮 [paper prototypes video and activity](https://youtu.be/z4glsttyxw8?si=yQvl2Hze_-pwovlN&t=417)
+
+- Paper prototypes, transparencies and sticky notes
+
+- Digital mockups
+
+- High fidelity mockups (controlled experiments)
+
+
+
+## Reading Materials
+
+- [The User Experience](http://www.jjg.net/elements/pdf/elements_ch02.pdf
+): A detailed look at the components of user experience design.
+
+
 - [Next: Assignment](assignment.md)
