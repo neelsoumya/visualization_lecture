@@ -399,7 +399,7 @@ How do you think your students would react to critiquing "broken" stories like t
 
 ## A bad diagram (how not to communicate)
 
-!(Complex diagram)[images/complex_diagram.png]
+![Complex diagram](images/complex_diagram.png)
 
 - 🥳 2 experts might figure it out, but the rest of the 8 billion people? 
 
