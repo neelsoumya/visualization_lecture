@@ -35,6 +35,8 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 
 * [Exercises in Python on public data Week 1](exercises/exercise_week1.md), [here](exercises/retail_plots.py) and [here](exercises/data_visualization_exercises.ipynb)
 
+* [Exercises in Python on storytelling and narrative gap Week 2](exercises/narrative_gap.ipynb)
+
 * [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
  
 * [Colab Notebook on Edward Tufte's principles of data visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/tufte_python.ipynb)
