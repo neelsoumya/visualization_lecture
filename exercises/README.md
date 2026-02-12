@@ -1,3 +1,7 @@
 # Exercises
 
 Exercises for data visualization based on public data.
+
+* [Exercise week 1](exercise_week1.md)
+
+* [Exercise week 2](exercise_week2.md)
