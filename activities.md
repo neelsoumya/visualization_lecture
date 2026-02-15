@@ -11,3 +11,5 @@
 - [How big is the space economy](https://www.visualcapitalist.com/how-big-is-the-space-economy/) 
 
 - [Why Greenland](https://www.visualcapitalist.com/how-greenlands-rare-earth-reserves-compare-to-the-rest-of-the-world/)
+
+- [Code](exercises/submarine_cable.md)
