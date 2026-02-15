@@ -2,6 +2,10 @@
 # This will also display a small sample of the dataset for inspection.
 # The code prints an "exercise" section for students and saves the biplot to /mnt/data/pca_biplot.png.
 
+# Install required packages (uncomment if running in a new environment)
+# pip install numpy pandas scikit-learn matplotlib
+
+
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
