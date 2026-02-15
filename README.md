@@ -47,6 +47,8 @@ pip install -e requirements.txt
 
 * [Exercises in Python on storytelling and narrative gap Week 2](exercises/narrative_gap.ipynb)
 
+* [Activities](activities.md)
+
 * [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
  
 * [Colab Notebook on Edward Tufte's principles of data visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/tufte_python.ipynb)
