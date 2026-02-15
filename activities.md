@@ -13,3 +13,7 @@
 - [Why Greenland](https://www.visualcapitalist.com/how-greenlands-rare-earth-reserves-compare-to-the-rest-of-the-world/)
 
 - [Code](exercises/submarine_cable.md)
+
+
+
+- [Next: Tufte's principles of visualization](lecture_tufte.md)
