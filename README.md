@@ -25,6 +25,14 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 * [Slides on unsupervised learning](https://github.com/neelsoumya/visualization_lecture/blob/main/Presentation_intro.pptx)
 
 
+## Installation
+
+Install Python and the required packages
+
+```bash
+pip install -e requirements.txt
+```
+
 ## Course content
 
 * [Introduction to data visualization/learning objectives](introduction.md)
