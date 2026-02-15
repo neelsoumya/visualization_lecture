@@ -7,6 +7,36 @@
 
 
 import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+
+# 1. Generate synthetic data (100 normal points)
+np.random.seed(0)
+X = np.random.randn(100, 3)
+
+# 2. Add a few obvious outliers
+outliers = np.array([[6, 6, 6],
+                     [-6, -5, 7],
+                     [8, -7, 6]])
+X = np.vstack([X, outliers])
+
+# 3. Standardize data
+X_scaled = StandardScaler().fit_transform(X)
+
+# 4. Perform PCA (2 components)
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X_scaled)
+
+# 5. Plot PC1 vs PC2
+plt.scatter(X_pca[:, 0], X_pca[:, 1])
+plt.xlabel("PC1")
+plt.ylabel("PC2")
+plt.title("Simple PCA Plot")
+plt.show()
+
+
+import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
