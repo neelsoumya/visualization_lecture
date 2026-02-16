@@ -8,6 +8,6 @@ Exercises for data visualization based on public data.
 
 * [Exercise week 3](exercise_week3.md)
 
-* [Environmental data and GIS (North Sea)](environmental_data_visualization_starter_notebooks.py)
+* [Environmental data and GIS data (North Sea drilling)](environmental_data_visualization_starter_notebooks.py)
 
 - [Next: Activities](../activities.md)
