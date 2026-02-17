@@ -10,4 +10,6 @@ Exercises for data visualization based on public data.
 
 * [Environmental data and GIS data (North Sea drilling)](environmental_data_visualization_starter_notebooks.py)
 
+* [Exercise week 4 activities](exercise_week4.md)
+
 - [Next: Activities](../activities.md)
