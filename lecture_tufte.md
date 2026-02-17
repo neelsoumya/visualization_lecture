@@ -236,7 +236,43 @@ plt.show()
 - In this example, the original chart exaggerates the size of the bars, leading to a high Lie Factor. The redesigned chart accurately represents the data, resulting in a Lie Factor of 1.
 
 
+## Activity Lie Factor
 
+```python
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
+# 1. Define our data
+data_v1 = 10
+data_v2 = 20
+data_increase = (data_v2 - data_v1) / data_v1 # This is 1.0 (or 100% increase)
+
+# 2. Setup the plot
+fig, ax = plt.subplots(figsize=(8, 5))
+ax.set_xlim(0, 50)
+ax.set_ylim(0, 30)
+ax.set_aspect('equal')
+
+# 3. Draw Square 1 (Side length = 10)
+# Area = 10 * 10 = 100
+rect1 = patches.Rectangle((5, 5), 10, 10, color='skyblue', label=f'Data: {data_v1}')
+ax.add_patch(rect1)
+
+# 4. Draw Square 2 (Side length = 20)
+# Area = 20 * 20 = 400
+# The data doubled, but the area quadrupled!
+rect2 = patches.Rectangle((25, 5), 20, 20, color='salmon', label=f'Data: {data_v2}')
+ax.add_patch(rect2)
+
+# Calculation of Graphic Effect
+# Graphic Increase = (400 - 100) / 100 = 3.0 (or 300%)
+# Lie Factor = 3.0 / 1.0 = 3.0
+
+plt.title(f"Visualizing with a Lie Factor of 3.0\nData doubles (10 to 20), but Area quadruples (100 to 400)")
+plt.legend()
+plt.axis('off')
+plt.show()
+```
 
 
 # Best visualizations of 2025
