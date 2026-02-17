@@ -236,7 +236,7 @@ plt.show()
 - In this example, the original chart exaggerates the size of the bars, leading to a high Lie Factor. The redesigned chart accurately represents the data, resulting in a Lie Factor of 1.
 
 
-## Activity Lie Factor
+## Activity: Lie Factor
 
 ```python
 import matplotlib.pyplot as plt
