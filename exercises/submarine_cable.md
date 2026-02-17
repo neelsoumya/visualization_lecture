@@ -1,4 +1,4 @@
-Nice — I went looking for an authoritative, *public* dataset you can use instead of (or alongside) TeleGeography, and the best match is the European open dataset from EMODnet (the EMODnet Human Activities “Cables — Telecommunication” layer). It’s licensed **CC-BY 4.0**, includes cable polylines for European waters, and is exactly what you want for a reproducible North Sea / Baltic topology. ([ows.emodnet-humanactivities.eu][1])
+Nice — I went looking for an authoritative, *public* dataset you can use instead of (or alongside) TeleGeography, and the best match is the European open dataset from EMODnet (the EMODnet Human Activities “Cables — Telecommunication” layer). It’s licensed **CC-BY 4.0**, includes cable polylines for European waters, and is exactly what you want for a reproducible North Sea / Baltic topology. 
 
 Two quick notes before the runnable work:
 

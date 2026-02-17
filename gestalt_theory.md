@@ -340,6 +340,16 @@ To see how this works in practice, let's imagine you are designing a map of a ci
 Which visual variable would you choose to represent the **number of visitors** at each park, and why?
 
 
+## Isarithms (Contours)
+
+[pg 18 of PDF](https://digitalsocietyschool.org/wp/wp-content/uploads/2020/09/Bertin_Semiology_of_Graphics_Excerpt_2016.pdf)
+
+- Hard to derive quantitative value from images
+
+
+## Value Variation
+
+
 
 ## Resources
 
