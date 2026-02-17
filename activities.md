@@ -14,6 +14,6 @@
 
 - [Code](exercises/submarine_cable.md)
 
-- [Visualize a map of all cameras connected to the Internet using Shodan](https://maps.shodan.io/#53.288615899911065/82.09482192993165/5/satellite/cameras)
+- [Visualize a map of all cameras connected to the Internet using Shodan](https://maps.shodan.io/#53.288615899911065/82.09482192993165/5/satellite/cameras) Can you see any trends?
 
 - [Next: Tufte's principles of visualization](lecture_tufte.md)
