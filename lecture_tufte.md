@@ -209,6 +209,9 @@ Find a visualization (from news media or a report) that violates Tufte's princip
 Calculate the Lie Factor for a misleading chart:
 $$ \text{Lie Factor} = \frac{\text{Size of effect shown in graphic}}{\text{Size of effect in data}} $$
 
+Here is an example image of _Lie factor_ > 1
+
+![Example of Lie factor](images/lie_factor_demo.png)
 
 
 ## Visualization Example for Lie Factor Calculation
