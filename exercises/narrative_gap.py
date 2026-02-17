@@ -66,3 +66,12 @@ narrative_audit = {
 }
 
 print(narrative_audit)
+
+'''
+## Key Takeaways
+# 
+# 1. High traffic volume doesn't necessarily translate to high-quality traffic.
+# 2. A spike in bounce rate indicates poor user experience or irrelevant content.
+# 3. The drop in conversion rate is directly tied to the increase in bounce rate.
+# 4. Data storytelling requires connecting seemingly disconnected metrics to form a coherent narrative.
+# '''
