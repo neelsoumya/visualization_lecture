@@ -66,4 +66,86 @@ These assignments progress from "low-code/no-code" to advanced data science.
 * **Data Cleaning:** Shodan data is "dirty." Banners often contain garbled text. Teaching students how to use Python's `json` library or `Pandas` to clean Shodan's nested JSON structure is a lesson in itself.
 
 
+## Code
+
+This script is designed to be a "starter kit" for your students. It uses the official `shodan` library to fetch data and `pandas` to structure it. This approach is much more powerful than the web interface because it allows students to perform custom aggregations and complex filtering.
+
+### 🛠️ Prerequisites
+
+Students will need to install the necessary libraries via terminal:
+
+```bash
+pip install shodan pandas matplotlib seaborn
+
+```
+
+---
+
+### 🐍 The Shodan-to-Pandas Script
+
+```python
+import shodan
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# 1. Setup API Key
+SHODAN_API_KEY = "YOUR_API_KEY_HERE"
+api = shodan.Shodan(SHODAN_API_KEY)
+
+# 2. Define the Query
+# Example: Looking for industrial control systems (Modbus) or specific servers (nginx)
+QUERY = 'product:"nginx" country:"US"'
+LIMIT = 100 # Adjust based on credit availability
+
+try:
+    # 3. Fetch Data
+    print(f"Searching for: {QUERY}...")
+    results = api.search(QUERY, limit=LIMIT)
+    
+    # 4. Extract into a List of Dicts
+    data = []
+    for result in results['matches']:
+        data.append({
+            'IP': result['ip_str'],
+            'Port': result['port'],
+            'Organization': result.get('org', 'n/a'),
+            'Country': result.get('location', {}).get('country_name', 'n/a'),
+            'City': result.get('location', {}).get('city', 'n/a'),
+            'OS': result.get('os', 'n/a'),
+            'Transport': result.get('transport', 'tcp')
+        })
+
+    # 5. Create DataFrame
+    df = pd.DataFrame(data)
+    print("\n--- Data Preview ---")
+    print(df.head())
+
+    # 6. Basic Visualization: Top Organizations
+    plt.figure(figsize=(10, 6))
+    sns.countplot(data=df, y='Organization', order=df['Organization'].value_counts().iloc[:10].index)
+    plt.title(f'Top 10 Organizations for query: {QUERY}')
+    plt.xlabel('Count of Devices')
+    plt.tight_layout()
+    plt.show()
+
+except shodan.APIError as e:
+    print(f"Error: {e}")
+
+```
+
+---
+
+### 🎓 Teaching Points for this Script
+
+1. **Nested JSON to Flat Tables:** The most important lesson here is how we "flatten" the data. Shodan returns a deeply nested dictionary (e.g., `result['location']['country_name']`). Teaching students how to extract these specific paths into a flat CSV/DataFrame is a core data engineering skill.
+2. **Handling Missing Values:** Shodan data is incomplete. Note the use of `.get('os', 'n/a')`—this prevents the script from crashing if a device doesn't report its Operating System.
+3. **API Rate Limiting:** Explain that every `api.search` call consumes "Query Credits." This introduces students to the real-world constraint of **data budgeting**.
+
+### 📈 Suggested Extension Assignment
+
+Ask your students to modify the script to create a **Heatmap** using the `City` and `Port` columns. This will teach them how to perform a "pivot" or a "groupby" operation in Pandas before plotting.
+
+
+
 - [Next: Tufte's principles of visualization](lecture_tufte.md)
