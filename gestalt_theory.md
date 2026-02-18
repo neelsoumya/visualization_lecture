@@ -349,6 +349,9 @@ Which visual variable would you choose to represent the **number of visitors** a
 
 ## Value Variation
 
+- Graduated sizes in a regular pattern
+
+- Regular pattern of different sized circles
 
 
 ## Resources
