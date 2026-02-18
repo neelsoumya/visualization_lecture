@@ -30,6 +30,8 @@ Material, notes, code and data for teaching visualization, dimensionality reduct
 Install Python and the required packages
 
 ```bash
+python -m venv venv_viz
+source venv_viz/bin/activate
 pip install -e requirements.txt
 ```
 
