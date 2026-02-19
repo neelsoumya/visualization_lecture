@@ -51,6 +51,10 @@ pip install -e requirements.txt
 
 * [Activities](activities.md)
 
+* [Interactive plots using plotly](exercises/exercise_week5.md)
+
+* [Spatial plotting using Folium and John Snow cholera visualizations](exercises/exercise_week6.md)
+
 * [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
  
 * [Colab Notebook on Edward Tufte's principles of data visualization](https://github.com/neelsoumya/visualization_lecture/blob/main/tufte_python.ipynb)
