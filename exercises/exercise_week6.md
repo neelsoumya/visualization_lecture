@@ -34,14 +34,70 @@ The most reliable source for this exercise is the **Robin Wilson** dataset, whic
 
 This script handles the heavy lifting: it loads the data, centers a map on the historic **Broad Street pump**, and layers on the density.
 
+_Folium_ is a powerful Python library used to create interactive maps 🗺️. It acts as a bridge between Python’s data manipulation capabilities and **Leaflet.js**, a popular JavaScript library for mobile-friendly interactive maps.
+
+With Folium, you can:
+
+* **Create base maps** using different providers like OpenStreetMap or CartoDB.
+* **Add markers** and popups to specific coordinates.
+* **Overlay data** using heatmaps, choropleths (shaded regions), or vector layers.
+
+### 🛠️ Basic Intro Code
+
+To get a map running, you only need a few lines. This example centers a map on the **Broad Street Pump** coordinates and adds a simple marker.
+
+```python
+import folium
+
+# 1. Create a Map object 
+# 'location' takes [latitude, longitude]
+# 'tiles' changes the background style
+study_area = folium.Map(location=[51.5132, -0.1367], zoom_start=17, tiles="OpenStreetMap")
+
+# 2. Add a simple Marker
+folium.Marker(
+    location=[51.5132, -0.1367],
+    popup="Broad Street Pump",
+    tooltip="Click for info",
+    icon=folium.Icon(color="red", icon="info-sign")
+).add_to(study_area)
+
+# 3. Display the map
+study_area
+
+```
+
+
 ```python
 import pandas as pd
 import folium
 from folium.plugins import HeatMap
 
 # 1. Load the data
-deaths = pd.read_csv("https://raw.githubusercontent.com/JimGrum/JohnSnow/master/data/deaths.csv")
-pumps = pd.read_csv("https://raw.githubusercontent.com/JimGrum/JohnSnow/master/data/pumps.csv")
+#deaths = pd.read_csv("https://raw.githubusercontent.com/JimGrum/JohnSnow/master/data/deaths.csv")
+#pumps = pd.read_csv("https://raw.githubusercontent.com/JimGrum/JohnSnow/master/data/pumps.csv")
+
+
+import numpy as np
+
+# 1. Generate Synthetic Data
+# Define the main Broad Street Pump location
+broad_st_pump = [51.5132, -0.1367]
+
+# Create 50 deaths clustered tightly around the Broad Street pump
+# np.random.normal adds a small 'jitter' to the coordinates
+lat_cluster = np.random.normal(51.5132, 0.0005, 50)
+lon_cluster = np.random.normal(-0.1367, 0.0005, 50)
+
+# Create a small DataFrame for these synthetic deaths
+deaths = pd.DataFrame({'Lat': lat_cluster, 'Lon': lon_cluster})
+
+# Create a simple DataFrame for 2 pumps
+pumps = pd.DataFrame({
+    'Pump_Name': ['Broad Street Pump', 'Oxford Street Pump'],
+    'Lat': [51.5132, 51.5150],
+    'Lon': [-0.1367, -0.1350]
+})
 
 # 2. Initialize the map (Centered on Soho, London)
 # Coordinates: 51.5132, -0.1367
@@ -81,3 +137,9 @@ How do you think changing the **radius** might affect your students' ability to 
 
 [Interactive John Snow Map Tutorial](https://www.youtube.com/watch?v=H8Ypb8Ei9YA)
 This video demonstrates how to take raw CSV data and transform it into a dynamic Folium map, which is exactly what we are doing with the cholera records.
+
+
+## Questions
+
+Visualizing Uncertainty: How we can use Python to show where the data might be "fuzzy" because of how it was digitized from a paper map 📜?
+

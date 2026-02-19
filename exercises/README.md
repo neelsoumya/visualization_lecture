@@ -14,6 +14,6 @@ Exercises for data visualization based on public data.
 
 * [Exercise week 5 (interactive plotting using plotly)](exercises_week5.md)
 
-* [Exercise week 6 John Snow cholera visualization](exercises_week6.md)
+* [Exercise week 6 John Snow cholera visualization and Folium GIS visualization](exercises_week6.md)
 
 - [Next: Activities](../activities.md)
