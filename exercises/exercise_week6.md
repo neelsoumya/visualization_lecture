@@ -99,6 +99,14 @@ pumps = pd.DataFrame({
     'Lon': [-0.1367, -0.1350]
 })
 
+# 🛠️ Now plot! Without looking at the code below!
+```
+
+* Solution
+
+
+```python
+
 # 2. Initialize the map (Centered on Soho, London)
 # Coordinates: 51.5132, -0.1367
 m = folium.Map(location=[51.5132, -0.1367], zoom_start=17, tiles="cartodbpositron")
