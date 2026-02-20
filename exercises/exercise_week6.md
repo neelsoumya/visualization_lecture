@@ -2,6 +2,9 @@
 
 John Snow’s 1854 map of the [Soho cholera outbreak](https://applieddatascience.cmp.uea.ac.uk/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html) is a foundational case study in data visualization 🗺️. By plotting deaths as individual black bars at specific addresses, Snow provided spatial evidence that challenged the prevailing "miasma" theory (the belief that disease spread through "bad air") and identified the Broad Street pump as the source of the contagion 🧪. 
 
+* [R package and resources for John Snow cholera data and visualization](https://arxiv.org/html/2504.13970v1)
+
+
 1. **Visual Encoding & Design Analysis**: This track focuses on the "how." You can teach students about Snow’s choice of marks (the bars) and channels (spatial position) ✒️. We can also look at the **Voronoi diagram** added to later versions, which used geometry to show which houses were mathematically closest to the Broad Street pump.
 2. **Evidence-Based Storytelling**: This track focuses on the "why." It explores how Snow used data to pivot public health policy. It’s an excellent way to discuss the ethics of data ⚖️ and how a visualization can be a tool for advocacy rather than just a neutral report.
 3. **Modern Technical Re-creation**: This is a hands-on track where students use modern datasets to recreate Snow’s analysis. We can develop a lab guide for using tools like **R (ggplot2)**, **Python (Folium/GeoPandas)**, or **GIS software** to create heat maps and spatial joins 💻.
