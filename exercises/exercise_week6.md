@@ -2,6 +2,8 @@
 
 John Snow’s 1854 map of the [Soho cholera outbreak](https://applieddatascience.cmp.uea.ac.uk/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html) is a foundational case study in data visualization 🗺️. By plotting deaths as individual black bars at specific addresses, Snow provided spatial evidence that challenged the prevailing "miasma" theory (the belief that disease spread through "bad air") and identified the Broad Street pump as the source of the contagion 🧪. 
 
+* Scavenger hunt exercise: generate new data and determine source of COVID-19 epidemic.
+
 * [R package and resources for John Snow cholera data and visualization](https://arxiv.org/html/2504.13970v1)
 
 
