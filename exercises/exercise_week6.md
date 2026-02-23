@@ -2,7 +2,6 @@
 
 John Snow’s 1854 map of the [Soho cholera outbreak](https://applieddatascience.cmp.uea.ac.uk/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html) is a foundational case study in data visualization 🗺️. By plotting deaths as individual black bars at specific addresses, Snow provided spatial evidence that challenged the prevailing "miasma" theory (the belief that disease spread through "bad air") and identified the Broad Street pump as the source of the contagion 🧪. 
 
-* Scavenger hunt exercise: generate new data and determine source of COVID-19 epidemic.
 
 * [R package and resources for John Snow cholera data and visualization](https://arxiv.org/html/2504.13970v1)
 
@@ -156,3 +155,116 @@ This video demonstrates how to take raw CSV data and transform it into a dynamic
 
 Visualizing Uncertainty: How we can use Python to show where the data might be "fuzzy" because of how it was digitized from a paper map 📜?
 
+
+
+## 🎮🛠️ Advanced Exercise: Hunt for Epidemic Center in COVID-19
+
+* Scavenger hunt exercise: generate new data and determine source of COVID-19 epidemic.
+
+* This is a way to bridge 19th-century epidemiological methods with a 21st-century context. We are going to move the "detective work" to **Wuhan, China**, focusing on the early days of the COVID-19 pandemic.
+
+In this scenario, your students are "Digital Epidemiologists." They have been handed a "noisy" dataset of hospital admissions and must determine if there is a single point of origin or if the spread is truly random.
+
+---
+
+## 🕵️‍♂️ The Mission: The Wuhan "Patient Zero" Hunt
+
+**The Backstory:** It’s early January 2020. Hospitals across Wuhan are reporting a "pneumonia of unknown cause." Your task is to map the first 500 reported cases. If John Snow was right, the "Pump" (the source) will be at the heart of the highest density cluster.
+
+### Step 1: Generate the Evidence (Synthetic Data)
+
+Students will run this block first to create their "Evidence Files" (`cases.csv` and `points_of_interest.csv`).
+
+```python
+import pandas as pd
+import numpy as np
+
+# 1. Set the "Hidden" Source: Huanan Seafood Market
+# Coordinates: 30.6195, 114.2577
+market_lat, market_lon = 30.6195, 114.2577
+
+# 2. Generate 500 Synthetic Cases
+# 70% of cases are tightly clustered around the market (The Source)
+cluster_count = 350
+cluster_lats = np.random.normal(market_lat, 0.005, cluster_count)
+cluster_lons = np.random.normal(market_lon, 0.005, cluster_count)
+
+# 30% are scattered randomly across the city (Community spread/noise)
+noise_count = 150
+noise_lats = np.random.uniform(30.50, 30.70, noise_count)
+noise_lons = np.random.uniform(114.20, 114.40, noise_count)
+
+# Combine into a DataFrame
+df_cases = pd.DataFrame({
+    'case_id': range(500),
+    'lat': np.concatenate([cluster_lats, noise_lats]),
+    'lon': np.concatenate([cluster_lons, noise_lons])
+})
+
+# 3. List of Potential "Sources" (The Scavenger Hunt Targets)
+df_pois = pd.DataFrame({
+    'name': ['Wuhan International Plaza', 'Huanan Seafood Market', 'Hankou Railway Station', 'Wuhan CDC'],
+    'lat': [30.584, 30.6195, 30.618, 30.612],
+    'lon': [114.271, 114.2577, 114.250, 114.265]
+})
+
+df_cases.to_csv('wuhan_cases.csv', index=False)
+df_pois.to_csv('wuhan_pois.csv', index=False)
+print("Data Generated! You now have 'wuhan_cases.csv' and 'wuhan_pois.csv'.")
+
+cases = df_cases
+pois = df_pois
+
+```
+
+---
+
+### Step 2: The Scavenger Hunt Challenge
+
+Now, students can take this boilerplate. Their goal is to visualize the data and answer the **Investigation Questions** below.
+
+```python
+import pandas as pd
+import folium
+from folium.plugins import HeatMap
+
+# LOAD DATA
+cases = pd.read_csv('wuhan_cases.csv')
+pois = pd.read_csv('wuhan_pois.csv')
+
+# INITIALIZE MAP
+# Center on Wuhan
+m = folium.Map(location=[30.6, 114.3], zoom_start=13, tiles='cartodbpositron')
+
+# TASK 1: Create a Heatmap of the 'cases'
+heat_data = cases[['lat', 'lon']].values.tolist()
+HeatMap(heat_data, radius=12, blur=15).add_to(m)
+
+# TASK 2: Add markers for the POIs (Points of Interest)
+# Use a different color to distinguish them from the 'heat'
+for _, poi in pois.iterrows():
+    folium.Marker(
+        location=[poi['lat'], poi['lon']],
+        popup=poi['name'],
+        icon=folium.Icon(color='black', icon='question-sign')
+    ).add_to(m)
+
+m.save('wuhan_investigation.html')
+m
+
+```
+
+---
+
+### 🔍 Investigation Questions for Students
+
+1. **The "Hot Zone":** Looking at the heatmap, which of the four black markers sits directly in the center of the "red" zone?
+2. **The Red Herring:** One marker is near a major transportation hub (Hankou Station). Why might an epidemiologist mistake a **transportation hub** for a **source**?
+3. **Data Noise:** You see cases scattered far away from the center. Does this disprove the "Market Theory," or does it represent a different stage of an outbreak? (Think: *Secondary Transmission*).
+4. **The "Broad Street" Moment:** In 1854, Snow removed the pump handle. If you were the health official in Wuhan based *only* on this map, what would be your first "emergency" recommendation?
+
+---
+
+### 💡 Pro-Tip for the Lab
+
+Encourage students to tweak the `radius` and `blur` in the `HeatMap` function. If they set the radius to **2**, the map will look like a scattered mess; if they set it to **50**, the entire city will look like it's on fire. Finding the "just right" visualization is part of the data viz craft!
