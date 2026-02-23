@@ -339,6 +339,29 @@ To see how this works in practice, let's imagine you are designing a map of a ci
 
 Which visual variable would you choose to represent the **number of visitors** at each park, and why?
 
+_Solution_: 
+
+Since the number of visitors is a quantitative value (meaning it represents a specific amount), we want a variable that our eyes naturally perceive as "more" or "less."
+
+When we look at a map, our brains are very good at comparing magnitudes if they are represented physically.
+
+Between Size 📏 and Shape 🔺, which one do you think would allow a reader to immediately see that one park is much busier than another?
+
+To represent the number of visitors, the best choice is Size 📏 (specifically, the area of a circle or the length of a bar).
+
+Here is why:
+
+Magnitude Perception 🧠: Our brains are naturally wired to associate "larger physical space" with "larger quantity." If you see a giant circle next to a tiny dot, you immediately know one has more visitors without even looking at a legend.
+
+Ordered Nature 📈: Data like visitor counts is quantitative and ordered. Size has a natural order (small to large) that matches the data (few to many).
+
+The Problem with Shape 🔺: Shapes are "nominal." A triangle isn't "more" than a square; it's just different. If you used triangles for 100 people and squares for 1,000, the viewer would have to memorize a complex code to understand the map.
+
+### Exercise: Testing Another Variable
+Now, imagine the city wants to show the type of park (e.g., Playground 🧸, Nature Reserve 🌲, or Sports Field ⚽).
+
+In this case, we aren't showing "how much," but "what kind." Which of Bertin's variables—Value (lightness/darkness) or Color Hue (red, blue, green)—would be most effective for distinguishing these categories?
+
 
 ## Isarithms (Contours)
 
