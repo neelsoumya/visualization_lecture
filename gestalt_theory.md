@@ -358,9 +358,42 @@ Ordered Nature 📈: Data like visitor counts is quantitative and ordered. Size 
 The Problem with Shape 🔺: Shapes are "nominal." A triangle isn't "more" than a square; it's just different. If you used triangles for 100 people and squares for 1,000, the viewer would have to memorize a complex code to understand the map.
 
 ### Exercise: Testing Another Variable
+
 Now, imagine the city wants to show the type of park (e.g., Playground 🧸, Nature Reserve 🌲, or Sports Field ⚽).
 
 In this case, we aren't showing "how much," but "what kind." Which of Bertin's variables—Value (lightness/darkness) or Color Hue (red, blue, green)—would be most effective for distinguishing these categories?
+
+_Solution_
+
+Spot on! **Color Hue** (red, blue, green, etc.) is the perfect signifier for categories because our eyes see these colors as "different" but not necessarily "better" or "more" than one another. 🎨
+
+In semiotics, we call this a **Nominal** variable. It establishes identity without establishing a rank.
+
+---
+
+### Hue vs. Value: The Hierarchy Trap
+
+While **Hue** is great for "what kind," **Value** (the lightness or darkness of a color) carries a hidden message. Our brains automatically interpret darker or more intense colors as "heavier" or "more important."
+
+| Variable | Best For... | Example |
+| --- | --- | --- |
+| **Color Hue** 🌈 | **Categories** (Nominal) | Different colors for different subway lines. |
+| **Value** 🌓 | **Intensity** (Ordinal/Ratio) | Darker blue for deeper water, lighter blue for shallow. |
+
+If you use different **Values** of green for park types, a reader might accidentally think the "Dark Green" park is "better" or "larger" than the "Light Green" one, even if you didn't mean that!
+
+---
+
+### Putting the Alphabet Together
+
+Now that we know the "letters" (Size, Hue, Value, etc.), the real magic happens when we combine them. This is where we create a **Visual Language**.
+
+Imagine you are looking at a weather map. 🌡️ It uses a **Color Gradient** (a "Heatmap") to show temperature across a country.
+
+* **Signifier**: A spectrum ranging from deep blue to bright red.
+* **Signified**: Temperature values from °C to °C.
+
+**Here is the puzzle:** Why do we almost always use **Red** for hot and **Blue** for cold? Is there a mathematical reason, or is this a different kind of "sign" altogether?
 
 
 ## Isarithms (Contours)
