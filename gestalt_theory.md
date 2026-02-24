@@ -1,5 +1,7 @@
 # Gestalt theory of data visualization
 
+- [SLIDES](https://github.com/neelsoumya/visualization_lecture/blob/main/slides/The_Science_of_Seeing_Data.pptx)
+
 - Gestalt theory, originating from psychology, emphasizes that humans perceive visual elements as organized patterns or wholes rather than just a collection of individual parts.
 
 - In data visualization, applying Gestalt principles can enhance the clarity and effectiveness of visual representations. 
