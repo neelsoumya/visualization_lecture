@@ -8,6 +8,8 @@
 
 - Are there chokepoints, which if taken out, would disrupt connectivity?
 
+- Any `aha` moments? Can you write a narrative around this?
+
 - [The true size](https://thetruesize.com/)
 
 - [How big is the space economy](https://www.visualcapitalist.com/how-big-is-the-space-economy/) 
