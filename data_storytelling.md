@@ -2,6 +2,9 @@
 
 This module focuses on the principles and practices of effective data storytelling and communication, with an emphasis on multivariate visualisation, ethical considerations, and practical coding skills.
 
+- [Slides](https://github.com/neelsoumya/visualization_lecture/blob/main/slides/data_storytelling_slides.pptx)
+
+
 ### 1. Principles of data storytelling
 * **Reading:** *Data Storytelling: The Essential Data Science Skill Everyone Needs* by Brent D
 * **Link:** [https://www.forbes.com/sites/brentdykes/2019/04/29/data-storytelling-the-essential-data-science-skill-everyone-needs/](https://www.forbes.com/sites/brentdykes/2019/04/29/data-storytelling-the-essential-data-science-skill-everyone-needs/)
@@ -14,6 +17,9 @@ This module focuses on the principles and practices of effective data storytelli
 
 ### 3. Ethical considerations in data visualization
 * **Reading:** *The Ethics of Data Visualization* by Alberto Cairo
+
+* [National Geographic article VERY GOOD](https://www.nationalgeographic.com/adventure/article/151016-data-points-alberto-cairo-interview)
+
 * **Link:** [https://www.ted.com/talks/alberto_cairo_the_ethics_of_data_visualization](https://www.ted.com/talks/alberto_cairo_the_ethics_of_data_visualization)
 * **Activities:** Critique visualisations for ethical issues and misleading representations.
 
