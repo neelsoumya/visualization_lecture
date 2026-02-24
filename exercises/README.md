@@ -16,4 +16,6 @@ Exercises for data visualization based on public data.
 
 * [Exercise week 6 John Snow cholera visualization and Folium GIS visualization](exercises_week6.md)
 
+* [Exercise week 7 visual storytelling superintelligence](exercises_week7.md)
+
 - [Next: Activities](../activities.md)
