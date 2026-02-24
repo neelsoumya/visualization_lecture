@@ -93,3 +93,161 @@ Write a short "news from the future" article (dated 2040) based on your plot.
 | **Data Storytelling** | Annotations and colors guide the eye to the "Velocity Gap." | Plot is technically correct but lacks context or narrative. |
 | **Insight & Narrative** | The story explains *why* the curves diverge based on Michael Nielsen’s theories. | The story is generic and doesn't connect to the data. |
 | **Aesthetics** | Professional styling (no default settings), clear labels, and high contrast. | Default Matplotlib colors; overlapping text or unreadable labels. |
+
+
+## Interactive notebook
+
+This is a complete Python structure designed to be copied directly into a **Jupyter Notebook** or **Google Colab**. It uses `Plotly` to create an interactive experience where students can hover over data points to see the "Institutional Bottlenecks" and "Unregulated Risks" at specific moments in time.
+
+---
+
+# **Notebook: The AI Velocity Gap Interactive Story**
+
+### **Overview**
+
+This notebook explores the "Velocity Gap"—the divergence between the exponential growth of AI risks and the linear/logistic growth of AI benefits. You will generate synthetic data, visualize it interactively, and annotate the "friction points" where human institutions struggle to keep pace.
+
+---
+
+## **Step 1: Setup and Data Generation**
+
+We will generate a dataset spanning from 2024 to 2044.
+
+* **Harmful Potential:** Modeled as an exponential curve.
+* **Realized Benefits:** Modeled as a Logistic (S-curve) to simulate initial excitement followed by a "Consensus Plateau."
+
+```python
+import pandas as pd
+import numpy as np
+import plotly.graph_objects as go
+
+def generate_velocity_data(years=20):
+    np.random.seed(42)
+    time = np.linspace(0, years, 200)
+    
+    # 1. Exponential Harm (Speed of Code)
+    harm = 0.8 * np.exp(0.22 * time) + np.random.normal(0, 0.5, 200).cumsum() * 0.1
+    
+    # 2. Logistic Benefits (Institutional Speed)
+    # L = max benefit, k = growth rate, x0 = midpoint
+    L, k, x0 = 18, 0.35, 10
+    benefits = L / (1 + np.exp(-k * (time - x0))) + np.random.normal(0, 0.1, 200)
+    
+    df = pd.DataFrame({
+        'Year': 2024 + time,
+        'Harmful_Potential': np.maximum(0, harm),
+        'Realized_Benefits': np.maximum(0, benefits),
+        'Gap': np.maximum(0, harm - benefits)
+    })
+    
+    # Adding 'Event' labels for interactivity
+    df['Event'] = ""
+    df.loc[30, 'Event'] = "First Major AI-Driven Bank Run"
+    df.loc[100, 'Event'] = "UN Global Consensus Summit (Deadlocked)"
+    df.loc[150, 'Event'] = "Institutional Stagnation Peak"
+    
+    return df
+
+df = generate_velocity_data()
+df.head()
+
+```
+
+---
+
+## **Step 2: Create the Interactive Plot**
+
+In this step, we use `graph_objects` to create a dual-layered story. Hover over the lines to see the widening "Velocity Gap."
+
+```python
+# Create the figure
+fig = go.Figure()
+
+# Add the Harmful Potential Trace
+fig.add_trace(go.Scatter(
+    x=df['Year'], y=df['Harmful_Potential'],
+    mode='lines',
+    name='Harmful AI Potential',
+    line=dict(color='#ef4444', width=4),
+    hovertemplate='<b>Year %{x:.1f}</b><br>Harm Level: %{y:.2f}<extra></extra>'
+))
+
+# Add the Realized Benefits Trace
+fig.add_trace(go.Scatter(
+    x=df['Year'], y=df['Realized_Benefits'],
+    mode='lines',
+    name='Realized AI Benefits (Institutional)',
+    line=dict(color='#3b82f6', width=4),
+    fill='tonexty', # Fills the "Gap" between the two lines
+    fillcolor='rgba(239, 68, 68, 0.1)', 
+    hovertemplate='<b>Year %{x:.1f}</b><br>Benefit Level: %{y:.2f}<extra></extra>'
+))
+
+# Add markers for specific "Historical Events"
+events = df[df['Event'] != ""]
+fig.add_trace(go.Scatter(
+    x=events['Year'], y=events['Harmful_Potential'],
+    mode='markers+text',
+    name='Critical Milestones',
+    text=events['Event'],
+    textposition="top left",
+    marker=dict(color='black', size=10, symbol='x')
+))
+
+# Update Layout for Storytelling
+fig.update_layout(
+    title={
+        'text': "<b>The Velocity Gap: Why AI Risk Outpaces Policy</b><br><span style='font-size:14px; color:gray'>Exponential technical harms vs. Logistic institutional benefits</span>",
+        'y':0.95, 'x':0.5, 'xanchor': 'center', 'yanchor': 'top'
+    },
+    xaxis_title="Timeline (Years)",
+    yaxis_title="Impact Magnitude",
+    hovermode="x unified",
+    template="plotly_white",
+    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+    shapes=[
+        # Highlight the "Divergence Point"
+        dict(type="rect", xref="x", yref="paper",
+             x0=2034, y0=0, x1=2044, y1=1,
+             fillcolor="LightSalmon", opacity=0.1, layer="below", line_width=0),
+    ]
+)
+
+# Add a narrative annotation
+fig.add_annotation(
+    x=2038, y=35,
+    text="<b>The Velocity Gap</b><br>Risk grows permissionless;<br>Benefits require consensus.",
+    showarrow=True, arrowhead=2,
+    ax=40, ay=-40,
+    bordercolor="#c7c7c7", borderwidth=2, borderpad=4, bgcolor="#ffffff", opacity=0.8
+)
+
+fig.show()
+
+```
+
+---
+
+## **Step 3: Critical Analysis (Discussion Questions)**
+
+1. **The Divergence Point:** Around the year 2034, the red line surpasses the blue line. Based on Michael Nielsen's essay, what specific "social technologies" could we invent to move the blue line upward?
+2. **The Shape of the Curve:** Why is a **Logistic Curve (S-curve)** a more realistic model for AI benefits than a straight line? (Hint: Think about FDA approvals or international treaties).
+3. **The Shaded Area:** The shaded red area represents the "Unmanaged Risk." If you were a policymaker, what is the maximum "Gap" you would allow before pausing AI development?
+
+---
+
+### **Student Task: Narrative Extension**
+
+**Modify the code above to simulate a "Policy Breakthrough" Scenario.**
+
+* Change the `benefit_trajectory` parameters so that the curve doesn't plateau at 18, but continues to grow linearly after year 10.
+* Add a new annotation to the plot marking where "Global Consensus" was reached.
+* **Export your plot as an HTML file** and write a 200-word summary explaining how your new data changes the future outcome.
+
+---
+
+### **How to use this in class:**
+
+1. **Live Coding:** Run the data generation block first and ask students to guess what the plot will look like.
+2. **Parameter Tweak:** Have students change the `k` (growth rate) in the logistic function to see how "faster bureaucracy" changes the outcome.
+3. **Visualization Critique:** Discuss why we used a "fill" between the lines (to visually represent the *cost* of the gap).
