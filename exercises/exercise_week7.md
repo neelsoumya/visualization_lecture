@@ -2,6 +2,8 @@
 
 How to bridge the gap between abstract technical concepts and data-driven storytelling? Below is a structured exercise designed for a Python-based data visualization class.
 
+- Reading [Michale Nielsen superintelligence risk](https://michaelnotebook.com/whichfuture/index.html)
+
 ---
 
 ## Exercise: The Velocity Gap – A Narrative Data Storytelling Challenge
