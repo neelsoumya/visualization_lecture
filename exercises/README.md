@@ -18,4 +18,6 @@ Exercises for data visualization based on public data.
 
 * [Exercise week 7 visual storytelling superintelligence](exercises_week7.md)
 
+* [Exercise COMPAS recidivism dataset visualization and bias in data](exercises_week8.md)
+
 - [Next: Activities](../activities.md)

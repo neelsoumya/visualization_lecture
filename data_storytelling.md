@@ -2,7 +2,11 @@
 
 This module focuses on the principles and practices of effective data storytelling and communication, with an emphasis on multivariate visualisation, ethical considerations, and practical coding skills.
 
+- [Nice slides](https://github.com/neelsoumya/visualization_lecture/blob/main/slides/Mastering_Data_Storytelling.pptx)
+
+
 - [Slides](https://github.com/neelsoumya/visualization_lecture/blob/main/slides/data_storytelling_slides.pptx)
+
 
 
 ### 1. Principles of data storytelling
