@@ -14,6 +14,66 @@ In this exercise, you will use Python to model a speculative future. You will ge
 
 ---
 
+### Interactive Python simulator
+
+Open the following code in a [Google Colab notebook](https://colab.research.google.com/drive/1Eo7oF2T7fBJrbfQ2P1M2XCJhqQu-8RwL?usp=sharing)
+
+or in a standalone python script.
+
+This uses `ipywidgets`.
+
+```bash
+python -m venv venv_viz
+source activate venv_viz
+pip install matplotlib numpy ipywidgets plotly
+```
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+from ipywidgets import interact, widgets
+
+def plot_velocity_gap(harm_growth, benefit_ceiling, inst_speed, policy_lag):
+    time = np.linspace(0, 25, 250)
+    
+    # Models
+    y_harm = 0.5 * np.exp(harm_growth * time)
+    midpoint = 10 + policy_lag
+    y_benefit = benefit_ceiling / (1 + np.exp(-inst_speed * (time - midpoint)))
+    
+    # Calculate Risk Score (Area between curves)
+    risk_score = np.trapz(np.maximum(0, y_harm - y_benefit), time)
+    
+    # Plotting
+    plt.figure(figsize=(10, 6))
+    plt.plot(time, y_harm, color='red', lw=2, label='Harmful AI Potential')
+    plt.plot(time, y_benefit, color='blue', lw=2, label='Realized AI Benefits')
+    
+    # Fill the gap
+    plt.fill_between(time, y_benefit, y_harm, where=(y_harm > y_benefit), 
+                     color='red', alpha=0.1, label='The Velocity Gap')
+    
+    # Formatting
+    plt.title(f"AI Velocity Gap | Cumulative Risk: {risk_score:.2f}", fontsize=14)
+    plt.xlabel("Years from AGI Emergence")
+    plt.ylabel("Impact Magnitude")
+    plt.ylim(0, min(max(y_harm)*1.1, 300))
+    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.legend()
+    
+    plt.show()
+
+# Interactive Sliders
+interact(
+    plot_velocity_gap,
+    harm_growth = widgets.FloatSlider(value=0.25, min=0.1, max=0.4, step=0.01),
+    benefit_ceiling = widgets.IntSlider(value=50, min=10, max=100, step=5),
+    inst_speed = widgets.FloatSlider(value=0.4, min=0.1, max=1.0, step=0.05),
+    policy_lag = widgets.IntSlider(value=0, min=-5, max=10, step=1)
+);
+```
+
 ### **Part 1: The Synthetic Data Generator**
 
 Use the following Python script to generate your dataset. This script simulates two trajectories:
