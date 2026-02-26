@@ -311,3 +311,20 @@ fig.show()
 1. **Live Coding:** Run the data generation block first and ask students to guess what the plot will look like.
 2. **Parameter Tweak:** Have students change the `k` (growth rate) in the logistic function to see how "faster bureaucracy" changes the outcome.
 3. **Visualization Critique:** Discuss why we used a "fill" between the lines (to visually represent the *cost* of the gap).
+
+
+## Activity
+
+- Now read this [blog on how we are all connected to Ramanujan](https://github.com/neelsoumya/science_blog_fun/blob/main/ramanujan_breath.md)
+
+- Implement the core formula `probabilty = e^(x * a / b)`
+
+where
+
+`x` = number of molecules breathed by us
+
+`a` = number of molecules breathed by Ramanujan during his lifetime
+
+`b` = Number of molecules in the Earth's atmosphere
+
+- Design an interactive simulation that varies `x`, `a` and `b` and looks at how it changes the probability that we breathe a molecule inhaled by Ramanujan.
