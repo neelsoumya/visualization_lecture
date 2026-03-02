@@ -1,6 +1,8 @@
-# 🎮🛠️ Exercise on visual storytelling (Superintelligence)
+# 🎮🛠️ Exercise on interactive visualizations and visual storytelling (Superintelligence)  
 
-How to bridge the gap between abstract technical concepts and data-driven storytelling? Below is a structured exercise designed for a Python-based data visualization class.
+- We show how to create interactive visualizations
+
+- How to bridge the gap between abstract technical concepts and data-driven storytelling? Below is a structured exercise designed for a Python-based data visualization class.
 
 - Reading [Michale Nielsen superintelligence risk](https://michaelnotebook.com/whichfuture/index.html)
 
@@ -165,7 +167,7 @@ This is a complete Python structure designed to be copied directly into a **Jupy
 
 ### **Overview**
 
-This notebook explores the "Velocity Gap"—the divergence between the exponential growth of AI risks and the linear/logistic growth of AI benefits. You will generate synthetic data, visualize it interactively, and annotate the "friction points" where human institutions struggle to keep pace.
+This notebook explores the "Velocity Gap" — the divergence between the exponential growth of AI risks and the linear/logistic growth of AI benefits. You will generate synthetic data, visualize it interactively, and annotate the "friction points" where human institutions struggle to keep pace.
 
 ---
 
