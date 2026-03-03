@@ -47,7 +47,7 @@ pip install -e requirements.txt
 
 * [Exercises in Python on public data Week 1](exercises/exercise_week1.md), [here](exercises/retail_plots.py) and [here](exercises/data_visualization_exercises.ipynb)
 
-* [Exercises in Python on storytelling and narrative gap Week 2](exercises/narrative_gap.ipynb)
+* [Exercises in Python on storytelling and narrative gap Week 2](https://colab.research.google.com/drive/1j5v1chzu5mVPHGXqPXbenkPxolCwm150?usp=sharing) and [notebook](exercises/narrative_gap.ipynb)
 
 * [Activities](activities.md)
 
