@@ -163,6 +163,9 @@ plt.show()
 
 
 ## Change blindness
+
+- 🎮💡 See this [video](https://www.youtube.com/watch?v=vJG698U2Mvo) 
+
 - Change blindness is a phenomenon where significant changes in a visual scene go unnoticed by the observer.
 
 - This occurs because our attention is limited, and we often focus on specific elements while ignoring others.
