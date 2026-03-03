@@ -16,6 +16,13 @@
 
 In this exercise, you will use Python to model a speculative future. You will generate synthetic data representing the growth of AI benefits versus AI harms, constrained by "Institutional Inertia." Your goal is to create a compelling visualization and a 300-word narrative that explains the "Velocity Gap" to a non-technical audience.
 
+## 🎮💡 Activity
+
+- Add one slide [here](https://docs.google.com/presentation/d/1YcxPIsxUEOoZrJjxtOYX2FYH08MPYccyIJZcqkkjXR4/edit?usp=sharing)
+
+- Create a narrative around AGI and superintelligence using the code below.
+
+
 ---
 
 ### Interactive Python simulator
@@ -317,7 +324,7 @@ fig.show()
 3. **Visualization Critique:** Discuss why we used a "fill" between the lines (to visually represent the *cost* of the gap).
 
 
-## Activity
+## 🎮💡 Activity
 
 - Now read this [blog on how we are all connected to Ramanujan](https://github.com/neelsoumya/science_blog_fun/blob/main/ramanujan_breath.md)
 

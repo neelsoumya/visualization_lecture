@@ -435,4 +435,4 @@ How do you think your students would react to critiquing "broken" stories like t
 ): A detailed look at the components of user experience design.
 
 
-- [Next: Assignment](assignment.md)
+- [Next: Succinct plots](succinct_plots.md)
