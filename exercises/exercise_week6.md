@@ -171,6 +171,8 @@ In this scenario, your students are "Digital Epidemiologists." They have been ha
 
 **The Backstory:** It’s early January 2020. Hospitals across Wuhan are reporting a "pneumonia of unknown cause." Your task is to map the first 500 reported cases. If John Snow was right, the "Pump" (the source) will be at the heart of the highest density cluster.
 
+- An ipython notebook is available [here](https://colab.research.google.com/drive/1kP_smN-ho_NA8SV4yBFABq6qG6bmVMNc?usp=sharing)
+
 ### Step 1: Generate the Evidence (Synthetic Data)
 
 Students will run this block first to create their "Evidence Files" (`cases.csv` and `points_of_interest.csv`).
@@ -267,4 +269,8 @@ m
 
 ### 💡 Pro-Tip for the Lab
 
-Encourage students to tweak the `radius` and `blur` in the `HeatMap` function. If they set the radius to **2**, the map will look like a scattered mess; if they set it to **50**, the entire city will look like it's on fire. Finding the "just right" visualization is part of the data viz craft!
+- Encourage students to tweak the `radius` and `blur` in the `HeatMap` function. 
+
+- If they set the radius to **2**, the map will look like a scattered mess; if they set it to **50**, the entire city will look like it's on fire. 
+
+- Finding the "just right" visualization is part of the data viz craft!
