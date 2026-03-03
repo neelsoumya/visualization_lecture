@@ -6,6 +6,8 @@
 
 - Reading [Michale Nielsen superintelligence risk](https://michaelnotebook.com/whichfuture/index.html)
 
+- [Blog post on superintelligence](https://neelsoumya.github.io/policy/agi_harms_benefits.html)
+
 ---
 
 ## Exercise: The Velocity Gap – A Narrative Data Storytelling Challenge
