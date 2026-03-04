@@ -14,13 +14,13 @@
 
 - e.g. _Diuretics appear to be associated with lower mortality in a group of patients with cardiovascular disease (shown in the blue region in the lower right-hand corner of the heatmap)_
 
-- [Principles of writing](https://sites.google.com/site/neelsoumya/research-resources/scientific-writing?authuser=0)
-
 - Divergent colour palette
 
 - A figure caption that explains everything the user needs to know and the interpretation
 
 - Ideally the reader should not have to read the main text/report at all!
+
+- [Principles of writing](https://sites.google.com/site/neelsoumya/research-resources/scientific-writing?authuser=0)
 
 
 - [Next: Assignment](assignment.md)
