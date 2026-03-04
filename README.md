@@ -74,6 +74,10 @@ pip install -e requirements.txt
 * [Assignment on visualization](assignment.md)
 
 
+## Declaration
+
+Generative AI tools were used in creating these resources. All content was independently verified by the author.
+
 ## Notes
 
 Some notes, mathematical proofs, concepts and activities are here:

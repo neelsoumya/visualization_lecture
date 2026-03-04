@@ -8,6 +8,8 @@
 
 - [Blog post on superintelligence](https://neelsoumya.github.io/policy/agi_harms_benefits.html)
 
+- Paper and resources co-created with students. Link forthcoming.
+
 ---
 
 ## Exercise: The Velocity Gap – A Narrative Data Storytelling Challenge
