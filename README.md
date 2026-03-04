@@ -99,6 +99,8 @@ https://github.com/rstudio/tufte
 
 * [R graph gallery](https://r-graph-gallery.com/)
 
+* [R shiny applications](https://neelsoumya.shinyapps.io/accident_prediction/)
+
 * Thinking outside the 10 dimensional box
 
 https://www.popularmechanics.com/science/math/a27737/visualize-higher-dimensions/
