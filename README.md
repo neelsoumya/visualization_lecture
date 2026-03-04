@@ -73,6 +73,7 @@ pip install -e requirements.txt
 
 * [Assignment on visualization](assignment.md)
 
+
 ## Notes
 
 Some notes, mathematical proofs, concepts and activities are here:
@@ -95,6 +96,8 @@ Rmarkdown package using Tufte's principles
 https://github.com/rstudio/tufte
 
 ## Resources
+
+* [R graph gallery](https://r-graph-gallery.com/)
 
 * Thinking outside the 10 dimensional box
 
