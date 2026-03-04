@@ -341,3 +341,6 @@ where
 `b` = Number of molecules in the Earth's atmosphere
 
 - Design an interactive simulation that varies `x`, `a` and `b` and looks at how it changes the probability that we breathe a molecule inhaled by Ramanujan.
+
+
+Interested in learning more? See the [Cambridge AI Safety Hub](https://caish.org/)
