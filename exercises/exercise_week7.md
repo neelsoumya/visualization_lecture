@@ -10,6 +10,8 @@
 
 - Paper and resources co-created with students. Link forthcoming.
 
+- [Game for paperclip optimization problem in AGI](https://www.decisionproblem.com/paperclips/index2.html)
+
 ---
 
 ## Exercise: The Velocity Gap – A Narrative Data Storytelling Challenge
