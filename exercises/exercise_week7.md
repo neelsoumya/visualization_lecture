@@ -12,6 +12,8 @@
 
 - [Game for paperclip optimization problem in AGI](https://www.decisionproblem.com/paperclips/index2.html)
 
+Interested in learning more? See the [Cambridge AI Safety Hub](https://caish.org/)
+
 ---
 
 ## Exercise: The Velocity Gap – A Narrative Data Storytelling Challenge
@@ -344,5 +346,6 @@ where
 
 - Design an interactive simulation that varies `x`, `a` and `b` and looks at how it changes the probability that we breathe a molecule inhaled by Ramanujan.
 
+- 🤔❓How can you innovatively visualize a probability?
 
-Interested in learning more? See the [Cambridge AI Safety Hub](https://caish.org/)
+
