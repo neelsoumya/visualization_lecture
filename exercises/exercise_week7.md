@@ -349,3 +349,4 @@ where
 - 🤔❓How can you innovatively visualize a probability?
 
 
+Play around with this interactive [Google Colab notebook](https://colab.research.google.com/drive/1TsCXpshIREbIG36MtTpOYdoo3szw0A1X?usp=sharing)
