@@ -594,21 +594,33 @@ regime_map = {
 n = len(countries)
 
 population_m = np.random.uniform(5, 330, size=n).round(1)
+
 internet_penetration = np.clip(np.random.normal(70, 15, n), 20, 98).round(1)
+
 social_media_penetration = np.clip(internet_penetration * np.random.uniform(0.6, 0.95, n), 10, 98).round(1)
+
 avg_daily_time = np.clip(np.random.normal(95, 35, n), 10, 400).round(1)
 
 misinformation_index = np.clip(np.random.beta(2,5,n)*100 + (np.array([1 if regime_map[c]!="democracy" else 0 for c in countries])*10) + np.random.normal(0,6,n), 0, 100).round(1)
+
 content_moderation_score = np.clip(np.random.normal(60, 18, n) - (np.array([1 if regime_map[c]=="authoritarian" else 0 for c in countries])*12), 5, 98).round(1)
+
 censorship_level = np.clip(np.random.normal(25, 20, n) + (np.array([1 if regime_map[c]=="authoritarian" else 0 for c in countries])*45), 0, 100).round(1)
+
 regulatory_strength = np.clip(np.random.beta(2,3,n) - (np.array([0.2 if regime_map[c]=="authoritarian" else 0 for c in countries])) + np.random.normal(0,0.05,n), 0, 1).round(2)
+
 reported_harm_incidents_per_100k = np.clip((misinformation_index/100)*np.random.uniform(40,200,n) + (avg_daily_time/120)*np.random.uniform(5,50,n) + np.random.normal(0,10,n), 0, None).round(1)
+
 youth_mental_health_decline_pct = np.clip((avg_daily_time/240)*np.random.uniform(5,35,n) + (misinformation_index/100)*np.random.uniform(2,15,n) + np.random.normal(0,2,n), 0, 50).round(2)
+
 political_polarization_index = np.clip(np.random.normal(45,18,n) + (misinformation_index*0.15) - (content_moderation_score*0.1), 0, 100).round(1)
+
 economic_dependency_pct = np.clip(np.random.normal(0.8,0.6,n) + (social_media_penetration/100)*np.random.uniform(0.1,1.5,n), 0, 8).round(2)
 
 public_health_harm_score = np.clip(0.6*youth_mental_health_decline_pct + 0.2*(misinformation_index) + 0.2*(reported_harm_incidents_per_100k/10), 0, 100).round(1)
+
 political_harm_score = np.clip(0.5*political_polarization_index + 0.4*misinformation_index + 0.1*censorship_level, 0, 100).round(1)
+
 economic_harm_score = np.clip(0.5*economic_dependency_pct*10 + 0.3*(reported_harm_incidents_per_100k/20) + 0.2*(100-content_moderation_score)/10, 0, 100).round(1)
 
 ban_risk_score_arr = np.clip(0.35*public_health_harm_score + 0.35*political_harm_score + 0.2*reported_harm_incidents_per_100k/10 + 0.1*(100* (1-regulatory_strength)), 0, 100).round(1)
