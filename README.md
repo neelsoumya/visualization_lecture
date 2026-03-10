@@ -49,7 +49,7 @@ pip install -e requirements.txt
 
 * [Exercises in Python on storytelling and narrative gap Week 2](https://colab.research.google.com/drive/1j5v1chzu5mVPHGXqPXbenkPxolCwm150?usp=sharing) and [notebook](exercises/narrative_gap.ipynb) and
 
-* [Activities](activities.md)
+* [Activities](activities.md) and [list of activities](exercises/README.md)
 
 * [Exercise COMPAS recidivism dataset visualization and bias in data](exercises/exercises_week8.md)
 

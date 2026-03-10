@@ -20,4 +20,6 @@ Exercises for data visualization based on public data.
 
 * [Exercise COMPAS recidivism dataset visualization and bias in data](exercises_week8.md)
 
+* [Exercise on visual storytelling for synthetic social media harm data](exercises_week9.md)
+
 - [Next: Activities](../activities.md)
