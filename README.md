@@ -47,9 +47,13 @@ pip install -e requirements.txt
 
 * [Exercises in Python on public data Week 1](exercises/exercise_week1.md), [here](exercises/retail_plots.py) and [here](exercises/data_visualization_exercises.ipynb)
 
-* [Exercises in Python on storytelling and narrative gap Week 2]https://colab.research.google.com/drive/1j5v1chzu5mVPHGXqPXbenkPxolCwm150?usp=sharing) and [notebook](exercises/narrative_gap.ipynb)
+* [Exercises in Python on storytelling and narrative gap Week 2](https://colab.research.google.com/drive/1j5v1chzu5mVPHGXqPXbenkPxolCwm150?usp=sharing) and [notebook](exercises/narrative_gap.ipynb) and
 
 * [Activities](activities.md)
+
+* [Exercise COMPAS recidivism dataset visualization and bias in data](exercises/exercises_week8.md)
+
+
 
 * [Interactive plots using ipywidgets](exercises/exercise_week7.md) and [Interactive plots using plotly](exercises/exercise_week5.md)
 
