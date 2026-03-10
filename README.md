@@ -177,6 +177,8 @@ https://dominicroye.github.io/blog/2025-12-14-broken-charts/
 https://www.youtube.com/watch?v=ZDSj-jEoaoc
 -->
 
+* [Reproducibility](https://cambiotraining.github.io/reproducibility-training/index.html) 
+
 ## Installation
 
 * Install R
