@@ -416,7 +416,7 @@ How do you think your students would react to critiquing "broken" stories like t
 - As shown in the figure below, overly complex visuals can fail to communicate outside a small expert audience.
 
 
-## Exercise (social media harm)
+# 🎮💡🛠️ Exercise (social media harm)
 
 # Assignment: Visualizing the Harms of Social Media
 
