@@ -350,3 +350,282 @@ where
 
 
 Play around with this interactive [Google Colab notebook](https://colab.research.google.com/drive/1TsCXpshIREbIG36MtTpOYdoo3szw0A1X?usp=sharing)
+
+
+# Interactive math exercise
+
+- ChatGPT has a feature to allow you to [interactively learn math exercises](https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/)
+
+- Design an interactive notebook in Python using the `ipywidgets` package to understand the Pythagoras theorem
+
+- Solution is shown below
+
+```python
+# Interactive Pythagoras Notebook (ipywidgets)
+# -------------------------------------------------
+# Run this file in a Jupyter environment (JupyterLab / Jupyter Notebook)
+# Requires: numpy, matplotlib, ipywidgets, IPython. Optional: sympy
+#
+# Features:
+# - Interactive sliders for legs a and b
+# - Live plotting of the right triangle and squares on each side
+# - Numeric and symbolic checks that a^2 + b^2 = c^2
+# - Short exercises and an auto-generated quiz with answer checking
+
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import Polygon
+from matplotlib.collections import PatchCollection
+from ipywidgets import FloatSlider, IntSlider, Checkbox, Button, Output, HBox, VBox, Label, Layout, interactive_output, Dropdown, BoundedFloatText, FloatText
+from IPython.display import display, Markdown, HTML
+
+# ---------- Helper geometry utilities ----------
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
+
+def centroid_triangle(p1, p2, p3):
+    return ((p1[0]+p2[0]+p3[0])/3.0, (p1[1]+p2[1]+p3[1])/3.0)
+
+
+def square_coords(p1, p2, outward_point):
+    """
+    Given segment p1->p2, return coordinates of the square built on that segment.
+    outward_point is a point inside the triangle (so we can choose the square direction away from the triangle).
+    """
+    p1 = np.array(p1, dtype=float)
+    p2 = np.array(p2, dtype=float)
+    v = p2 - p1
+    L = np.linalg.norm(v)
+    if L == 0:
+        return [p1.tolist()]
+    # perpendicular vector of same length
+    perp = np.array([-v[1], v[0]])
+    perp = perp / np.linalg.norm(perp) * L
+    midpoint = (p1 + p2) / 2.0
+    # choose perp direction so it points away from triangle centroid
+    dir_test = outward_point - midpoint
+    if np.dot(perp, dir_test) > 0:
+        perp = -perp
+    q1 = p1 + perp
+    q2 = p2 + perp
+    # square coords (p1 -> p2 -> q2 -> q1)
+    return [tuple(p1.tolist()), tuple(p2.tolist()), tuple(q2.tolist()), tuple(q1.tolist())]
+
+
+# ---------- Plotting function ----------
+
+def plot_triangle_and_squares(a, b, show_squares=True, annotate=True, figsize=(6,6)):
+    """Plot a right triangle with legs a (x-axis) and b (y-axis) and the squares on each side."""
+    # points
+    A = (0.0, 0.0)       # right angle at origin
+    B = (a, 0.0)         # point on x-axis
+    C = (0.0, b)         # point on y-axis
+    c = hypotenuse(a, b)
+
+    # prepare figure
+    fig, ax = plt.subplots(figsize=figsize)
+    ax.set_aspect('equal', adjustable='box')
+
+    # triangle
+    tri = Polygon([A, B, C], closed=True)
+    ax.add_patch(Polygon([A, B, C], closed=True, fill=True, alpha=0.15, edgecolor='black'))
+
+    patches = []
+    colors = []
+
+    centroid = np.array(centroid_triangle(A,B,C))
+
+    if show_squares:
+        # square on AB (length a)
+        sq_ab = square_coords(A, B, outward_point=centroid)
+        patches.append(Polygon(sq_ab, closed=True))
+        colors.append(0.6)
+
+        # square on AC (length b)
+        sq_ac = square_coords(A, C, outward_point=centroid)
+        patches.append(Polygon(sq_ac, closed=True))
+        colors.append(0.4)
+
+        # square on BC (hypotenuse length c)
+        sq_bc = square_coords(B, C, outward_point=centroid)
+        patches.append(Polygon(sq_bc, closed=True))
+        colors.append(0.2)
+
+        p = PatchCollection(patches, alpha=0.18, edgecolor='black')
+        ax.add_collection(p)
+
+    # plot points and edges
+    xs = [A[0], B[0], C[0], A[0]]
+    ys = [A[1], B[1], C[1], A[1]]
+    ax.plot(xs, ys, '-k')
+    ax.scatter([A[0],B[0],C[0]],[A[1],B[1],C[1]], zorder=20)
+    ax.text(A[0], A[1], ' A (right angle)', fontsize=9, va='top', ha='left')
+    ax.text(B[0], B[1], f' B ({a:.2f},0)', fontsize=9, va='bottom', ha='center')
+    ax.text(C[0], C[1], f' C (0,{b:.2f})', fontsize=9, va='center', ha='right')
+
+    # annotation for lengths
+    mid_ab = ((A[0]+B[0])/2.0, (A[1]+B[1])/2.0)
+    mid_ac = ((A[0]+C[0])/2.0, (A[1]+C[1])/2.0)
+    mid_bc = ((B[0]+C[0])/2.0, (B[1]+C[1])/2.0)
+    ax.text(mid_ab[0], mid_ab[1]-0.05*max(a,b,1), f'a = {a:.2f}', ha='center')
+    ax.text(mid_ac[0]-0.05*max(a,b,1), mid_ac[1], f'b = {b:.2f}', va='center', rotation=90)
+    ax.text(mid_bc[0]+0.02*max(a,b,1), mid_bc[1]+0.02*max(a,b,1), f'c = {c:.2f}')
+
+    # axes limits
+    pad = max(a,b)*0.6 + 0.5
+    ax.set_xlim(-pad, max(a,b)+pad)
+    ax.set_ylim(-pad, max(a,b)+pad)
+    ax.set_xlabel('x')
+    ax.set_ylabel('y')
+    ax.set_title('Right triangle with legs a and b; squares on each side')
+    ax.grid(True, alpha=0.3)
+
+    if annotate:
+        # Area texts: squares areas
+        ax.text(0.02, 0.98, f'a^2 = {a**2:.3f}\nb^2 = {b**2:.3f}\nc^2 = {c**2:.3f}\na^2 + b^2 = {(a**2+b**2):.3f}', transform=ax.transAxes,
+                fontsize=10, va='top', bbox=dict(boxstyle='round', alpha=0.12))
+
+    plt.show()
+
+
+# ---------- Interactive widgets and layout ----------
+
+# Widget definitions
+a_slider = FloatSlider(value=3.0, min=0.1, max=12.0, step=0.1, description='a (leg):', continuous_update=True, layout=Layout(width='380px'))
+b_slider = FloatSlider(value=4.0, min=0.1, max=12.0, step=0.1, description='b (leg):', continuous_update=True, layout=Layout(width='380px'))
+show_squares_chk = Checkbox(value=True, description='Show squares')
+annotate_chk = Checkbox(value=True, description='Show numeric annotation')
+
+out_plot = Output()
+
+
+def _update_plot(a, b, show_squares, annotate):
+    out_plot.clear_output(wait=True)
+    with out_plot:
+        if a <= 0 or b <= 0:
+            display(Markdown('**Please choose positive values for a and b.**'))
+            return
+        plot_triangle_and_squares(a, b, show_squares=show_squares, annotate=annotate)
+
+# wire interactive output
+widgets_to_link = {'a': a_slider, 'b': b_slider, 'show_squares': show_squares_chk, 'annotate': annotate_chk}
+interactive_plot = interactive_output(_update_plot, widgets_to_link)
+
+# Top instructions
+instructions = Label(
+    value="""
+    # Pythagoras theorem — interactive exploration
+
+    Move the sliders for **a** and **b** (the legs of a right triangle).
+    - The notebook draws the triangle and the squares built on each of the three sides.
+    - Compare the area of the square on the hypotenuse (c^2) with the sum of the areas of the squares on the legs (a^2 + b^2).
+
+    Use the \"+Quiz\" section below to test your understanding with short exercises.
+    """
+)
+
+controls = VBox([HBox([a_slider, b_slider]), HBox([show_squares_chk, annotate_chk])])
+
+# Display UI
+ui = VBox([instructions, controls, out_plot])
+
+# initial render
+_update_plot(a_slider.value, b_slider.value, show_squares_chk.value, annotate_chk.value)
+
+# display interactive UI (so users can re-render by changing widgets)
+display(ui)
+
+# connect event handlers so that moving sliders updates the plot interactively
+for w in [a_slider, b_slider, show_squares_chk, annotate_chk]:
+    w.observe(lambda change: _update_plot(a_slider.value, b_slider.value, show_squares_chk.value, annotate_chk.value), names='value')
+
+
+# ---------- Symbolic check (optional) ----------
+try:
+    import sympy as sp
+    has_sympy = True
+except Exception:
+    has_sympy = False
+
+if has_sympy:
+    display(Markdown('**Symbolic demonstration (using SymPy)**'))
+    a, b = sp.symbols('a b', positive=True)
+    c = sp.sqrt(a**2 + b**2)
+    expr = sp.simplify(c**2 - (a**2 + b**2))
+    display(Markdown(f'`simplify(c**2 - (a**2 + b^2))` = `{expr}` (identically 0)'))
+else:
+    display(Markdown('*SymPy not detected — symbolic verification skipped (optional).*'))
+
+
+# ---------- Small exercises & quiz ----------
+
+quiz_out = Output()
+
+# Widgets for exercise: compute hypotenuse
+exercise_a = FloatText(value=3.0, description='a:')
+exercise_b = FloatText(value=4.0, description='b:')
+answer_input = FloatText(value=0.0, description='c (your answer):')
+check_btn = Button(description='Check answer', button_style='primary')
+
+
+def _check_answer(btn=None):
+    quiz_out.clear_output()
+    a = float(exercise_a.value)
+    b = float(exercise_b.value)
+    true_c = hypotenuse(a, b)
+    user_c = float(answer_input.value)
+    tol = 1e-2
+    with quiz_out:
+        if abs(user_c - true_c) <= tol:
+            display(Markdown(f':white_check_mark: Correct! True c = {true_c:.5f}'))
+        else:
+            display(Markdown(f':x: Not quite. True c = **{true_c:.5f}**. Your answer = {user_c:.5f}'))
+
+check_btn.on_click(_check_answer)
+
+# Random quiz generator
+rand_btn = Button(description='New random problem', button_style='info')
+
+import random
+
+def _new_problem(btn=None):
+    a_val = round(random.uniform(1.0, 10.0), 2)
+    b_val = round(random.uniform(1.0, 10.0), 2)
+    exercise_a.value = a_val
+    exercise_b.value = b_val
+    answer_input.value = 0.0
+    _update_plot(a_val, b_val, show_squares_chk.value, annotate_chk.value)
+
+rand_btn.on_click(_new_problem)
+
+# assemble quiz UI
+quiz_box = VBox([
+    Label(value='## Quick quiz — compute the hypotenuse'), # Changed Markdown to Label
+    HBox([exercise_a, exercise_b, answer_input]),
+    HBox([check_btn, rand_btn]),
+    quiz_out
+])
+
+# display quiz
+display(quiz_box)
+
+# ---------- Extension ideas for students ----------
+
+display(Markdown('''
+---
+### Extension ideas (for a class exercise or a short project)
+
+1. **Proof by rearrangement**: create an interactive demonstration that divides the square of side (a+b) into pieces and rearranges them to show equality of areas.
+2. **Generalize to Euclidean geometry**: demonstrate using vectors why the dot product leads to the theorem (u·u = |u|^2, and orthogonality implies cross terms vanish).
+3. **Data-collection exercise**: measure (with a ruler) multiple right triangles and build a scatter plot of a^2 + b^2 vs c^2; compute residuals and discuss measurement error.
+4. **3D generalization**: explore distance formula in 3D and compare to the Pythagorean result.
+
+'''))
+
+# End of notebook
+display(Markdown('**Notebook ready — change sliders above or use the quiz to explore Pythagoras.**'))
+
+```
