@@ -292,3 +292,8 @@ m
 - If they set the radius to **2**, the map will look like a scattered mess; if they set it to **50**, the entire city will look like it's on fire. 
 
 - Finding the "just right" visualization is part of the data viz craft!
+
+
+## 🎮💡🛠️ Activity: visualizing potholes
+
+- Use data from Wales on [potholes](https://www.gov.wales/resurfaced-roads-potholes-repaired-and-potholes-prevented-april-2025-january-2026) and do a spatial visualization
