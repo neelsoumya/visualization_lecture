@@ -1,6 +1,18 @@
 # John Snow visualizations (Broad Street pump London)
 
-John Snow’s 1854 map of the [Soho cholera outbreak](https://applieddatascience.cmp.uea.ac.uk/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html) is a foundational case study in data visualization 🗺️. By plotting deaths as individual black bars at specific addresses, Snow provided spatial evidence that challenged the prevailing "miasma" theory (the belief that disease spread through "bad air") and identified the Broad Street pump as the source of the contagion 🧪. 
+- In the mid-19th century, London was a city struggling with rapid urbanization and a recurring, deadly mystery: cholera.
+
+- At the time, the medical establishment overwhelmingly favored miasma theory, believing that diseases were spread by "bad air" or foul odors. 
+
+- During the 1854 outbreak in Soho, physician John Snow challenged this dogma by hypothesizing that cholera was actually waterborne. 
+
+- To prove it, he conducted what we now recognize as a landmark piece of shoe-leather epidemiology; he meticulously interviewed residents and plotted every recorded death as a black bar on a street map. 
+
+- This map revealed a startling spatial cluster centered directly around the Broad Street water pump. Snow’s ability to transform raw data into a visual narrative not only convinced local officials to remove the pump handle—halting the epidemic
+
+- John Snow’s 1854 map of the [Soho cholera outbreak](https://applieddatascience.cmp.uea.ac.uk/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html) is a foundational case study in data visualization 🗺️. 
+
+- By plotting deaths as individual black bars at specific addresses, Snow provided spatial evidence that challenged the prevailing "miasma" theory (the belief that disease spread through "bad air") and identified the Broad Street pump as the source of the contagion 🧪. 
 
 
 * [R package and resources for John Snow cholera data and visualization](https://arxiv.org/html/2504.13970v1)
