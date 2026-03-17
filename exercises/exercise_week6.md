@@ -18,7 +18,7 @@
 
 - This is a clever use of symbols: think back to the lesson on [data semiotics and the gestalt theory of visualization](../gestalt_theory.md)
 
-- Read the article and the [visualization on the progress of the war in Iran](https://www.economist.com/middle-east-and-africa/2026/03/12/what-data-reveal-about-the-wars-progress)
+- Read the article and the [visualization on the progress of the war in Iran](https://www.economist.com/middle-east-and-africa/2026/03/12/what-data-reveal-about-the-wars-progress). Notice how different colours have been used for the different nations and the size of the bubbles indicates the severity.
 
 
 * [R package and resources for John Snow cholera data and visualization](https://arxiv.org/html/2504.13970v1)
