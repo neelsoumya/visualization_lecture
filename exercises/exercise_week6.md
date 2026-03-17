@@ -14,6 +14,12 @@
 
 - By plotting deaths as individual black bars at specific addresses, Snow provided spatial evidence that challenged the prevailing "miasma" theory (the belief that disease spread through "bad air") and identified the Broad Street pump as the source of the contagion 🧪. 
 
+- _Things to ponder_: 🤔❓ Observe how John Snow plotted bars/barplots to denote number of cases at a particular location
+
+- This is a clever use of symbols: think back to the lesson on [data semiotics and the gestalt theory of visualization](../gestalt_theory.md)
+
+- Read the article and the [visualization on the progress of the war in Iran](https://www.economist.com/middle-east-and-africa/2026/03/12/what-data-reveal-about-the-wars-progress)
+
 
 * [R package and resources for John Snow cholera data and visualization](https://arxiv.org/html/2504.13970v1)
 
@@ -149,7 +155,7 @@ m
 
 ### 🧪 Understanding the "Heat"
 
-In this setup, we didn't specify a "weight" for the points. Folium's `HeatMap` simply looks at the coordinate list and says, "There is 1 death at this exact spot." When ten rows have nearly identical coordinates, the color turns from cool blue to a "hot" red.
+In this setup, we did not specify a "weight" for the points. Folium's `HeatMap` simply looks at the coordinate list and says, "There is 1 death at this exact spot." When ten rows have nearly identical coordinates, the color turns from cool blue to a "hot" red.
 
 Since we are trying to prove a causal link between the pumps and the deaths, the visual contrast is key.
 
@@ -175,7 +181,7 @@ Visualizing Uncertainty: How we can use Python to show where the data might be "
 
 * This is a way to bridge 19th-century epidemiological methods with a 21st-century context. We are going to move the "detective work" to **Wuhan, China**, focusing on the early days of the COVID-19 pandemic.
 
-In this scenario, your students are "Digital Epidemiologists." They have been handed a "noisy" dataset of hospital admissions and must determine if there is a single point of origin or if the spread is truly random.
+In this scenario, your students are _Digital Epidemiologists._ They have been handed a "noisy" dataset of hospital admissions and must determine if there is a single point of origin or if the spread is truly random.
 
 ---
 
