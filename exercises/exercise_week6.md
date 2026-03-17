@@ -317,7 +317,7 @@ import datetime
 
 # Setup parameters
 num_records = 500
-np.random.seed(42)
+np.random.seed(129)
 
 # Generate synthetic timestamps over 24 hours
 base_time = pd.Timestamp(datetime.datetime.now().date())
