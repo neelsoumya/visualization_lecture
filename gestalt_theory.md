@@ -418,6 +418,11 @@ Imagine you are looking at a weather map. 🌡️ It uses a **Color Gradient** (
 
 - Read the article and the [visualization on the progress of the war in Iran](https://www.economist.com/middle-east-and-africa/2026/03/12/what-data-reveal-about-the-wars-progress). Notice how different colours have been used for the different nations and the size of the bubbles indicates the severity.
 
+## 🎮💡🛠️ Activity
+
+- Design symbols and colours for a cybersecurity handbook
+
+- Read the work of Sunny Fugate who suggests that we need symbols for cybersecurity
 
 ## Resources
 
