@@ -422,7 +422,7 @@ Imagine you are looking at a weather map. 🌡️ It uses a **Color Gradient** (
 
 - Design symbols and colours for a cybersecurity handbook
 
-- Read the work of Sunny Fugate who suggests that we need symbols for cybersecurity
+- Read the work of Sunny Fugate who suggests that we need [new symbols for cybersecurity](https://dl.acm.org/doi/10.1145/3046055.3046064)
 
 ## Resources
 
