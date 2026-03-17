@@ -297,3 +297,74 @@ m
 ## 🎮💡🛠️ Activity: visualizing potholes
 
 - Use data from Wales on [potholes](https://www.gov.wales/resurfaced-roads-potholes-repaired-and-potholes-prevented-april-2025-january-2026) and do a spatial visualization
+
+
+## 🎮🛡️ Activity: Spatial Visualization of Cyber Attacks
+
+In this activity, you will apply principles of spatial visualization to explore and communicate patterns in cyber attack data. Cyber security analysts often need to understand the geographic origin, target, and propagation of attacks in real-time or for post-incident analysis. Standard markers are often insufficient to capture the complexity of these events.
+
+### Task 1: Data Acquisition or Synthesis
+Choose **one** of the following approaches to obtain your dataset:
+* **Option A (Public Data):** Find a publicly available dataset containing geographic information about cyber attacks (e.g., source IP geolocation, target location, attack type, timestamp). You can look at resources like Kaggle or open cybersecurity feeds.
+* **Option B (Synthetic Data):** Create a synthetic dataset in Python that simulates a coordinated global cyber attack. Your dataset should include variables such as `Timestamp`, `Source_Lat`, `Source_Lon`, `Target_Lat`, `Target_Lon`, `Attack_Type` (e.g., DDoS, Phishing, Malware), and `Severity`.
+
+Here is some starter Python code to help you generate synthetic data for Option B. You can run this snippet in a Jupyter Notebook or Python script to create a CSV file with mock cyber attack records.
+
+```python
+import pandas as pd
+import numpy as np
+import datetime
+
+# Setup parameters
+num_records = 500
+np.random.seed(42)
+
+# Generate synthetic timestamps over 24 hours
+base_time = pd.Timestamp(datetime.datetime.now().date())
+timestamps = [base_time + pd.Timedelta(minutes=np.random.randint(0, 1440)) for _ in range(num_records)]
+
+# Types of attacks and severities
+attack_types = ['DDoS', 'Malware', 'Phishing', 'Ransomware', 'SQL Injection']
+severities = ['Low', 'Medium', 'High', 'Critical']
+
+# Generate random geographical coordinates (approximate global bounds)
+# Lat: -90 to +90, Lon: -180 to +180
+src_lats = np.random.uniform(-90, 90, num_records)
+src_lons = np.random.uniform(-180, 180, num_records)
+tgt_lats = np.random.uniform(-90, 90, num_records)
+tgt_lons = np.random.uniform(-180, 180, num_records)
+
+# Generate categorical data
+attacks = np.random.choice(attack_types, num_records)
+sevs = np.random.choice(severities, num_records, p=[0.5, 0.3, 0.15, 0.05]) # Weighted probabilities
+
+# Create DataFrame
+df_cyber = pd.DataFrame({
+    'Timestamp': sorted(timestamps),
+    'Source_Lat': src_lats,
+    'Source_Lon': src_lons,
+    'Target_Lat': tgt_lats,
+    'Target_Lon': tgt_lons,
+    'Attack_Type': attacks,
+    'Severity': sevs
+})
+
+# Save to CSV
+df_cyber.to_csv('synthetic_cyber_attacks.csv', index=False)
+print(f"Generated {num_records} synthetic cyber attack records in 'synthetic_cyber_attacks.csv'")
+```
+
+### Task 2: Design Special Symbols and Notations
+Standard map markers (like simple dots or pins) are not enough for visualizing complex cyber threats. Design a custom set of symbols or a visual notation system tailored explicitly for cyber attacks. Consider:
+* How will you visually distinguish between different *types* of attacks?
+* How will you represent the *severity* or volume of an attack?
+* Can you design glyphs that indicate the *state* of a target (e.g., compromised, under attack, secure)?
+
+**Deliverable:** Create a legend or a sketch of your "symbol dictionary" explaining your choices for visual encoding.
+
+### Task 3: Spatial Visualization Design
+Using your dataset (Task 1) and your custom symbols (Task 2), design a spatial visualization (a map or a network graph projected onto a map) that tells the story of the cyber attack(s).
+* Consider the map projection and base layer. E.g., Dark mode base maps are often used in cyber maps to make bright symbols pop—justify your choice.
+* If your data is temporal, how will you represent changes over time? 
+
+**Deliverable:** Produce a programmatic prototype of your visualization (e.g., using `folium`, `geopandas`, or similar tools) or a high-fidelity mockup using your designed notations.
