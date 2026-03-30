@@ -73,7 +73,7 @@ pip install -e requirements.txt
 
 * [Data storytelling](data_storytelling.md)
 
-* [Succinct plots](succinct_plots.md)
+* [Succinct plots for papers and reports](succinct_plots.md)
 
 * [Assignment on visualization](assignment.md)
 
