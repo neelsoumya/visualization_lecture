@@ -291,7 +291,16 @@ m
 
 - If they set the radius to **2**, the map will look like a scattered mess; if they set it to **50**, the entire city will look like it's on fire. 
 
-- Finding the "just right" visualization is part of the data viz craft!
+- Finding the "just right" visualization is part of the data visualization craft!
+
+
+## 🎮💡🛠️ Activity: use the `drawdata` package
+
+- Use the []`drawdata` package](https://koaning.github.io/drawdata/) to draw data and make an interesting visualization
+
+- You can draw data using the cursor!
+
+- Credit: Thanks to Mark Fernandes for suggesting this
 
 
 ## 🎮💡🛠️ Activity: visualizing potholes
