@@ -424,6 +424,25 @@ Imagine you are looking at a weather map. 🌡️ It uses a **Color Gradient** (
 
 - Read the work of Sunny Fugate who suggests that we need [new symbols for cybersecurity](https://dl.acm.org/doi/10.1145/3046055.3046064)
 
+- Core idea: Sunny Fugate proposes “ambient visualization” that embeds simple, immediately recognizable symbols and visual features into cyber defense displays so that potential attacks “pop out” before conscious, effortful analysis is needed.
+
+- Types of symbols and cues
+
+- Size of symbols: _looming_ objects easily grab our attention
+
+- Pre-attentive visual features (color, orientation, size) to make anomalies stand out.
+
+- Simple glyphs/icons that encode attack-relevant properties (e.g., unusual traffic volume, unexpected ports, suspicious IP relationships).
+
+- Ambient, peripheral displays where changes in these symbols signal shifts in the network’s threat state without demanding constant focused attention.
+
+- interfaces must exploit human perceptual strengths instead of just adding more text logs or dense tables
+
+- Here is what a cybersecurity handbook with new symbols might look like
+
+![image](images/cybersecurity_symbols.png)
+
+
 ## Resources
 
 - [The pyschology behind data visualization](https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/)
