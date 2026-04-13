@@ -296,7 +296,7 @@ m
 
 ## 🎮💡🛠️ Activity: use the `drawdata` package
 
-- Use the []`drawdata` package](https://koaning.github.io/drawdata/) to draw data and make an interesting visualization
+- Use the [`drawdata` package](https://koaning.github.io/drawdata/) to draw data and make an interesting visualization
 
 - You can draw data using the cursor!
 
