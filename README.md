@@ -32,8 +32,10 @@ Install Python and the required packages
 ```bash
 python -m venv venv_viz
 source venv_viz/bin/activate
-pip install -e requirements.txt
+pip install -r requirements.txt
 ```
+
+- [requirements.txt](requirements.txt)
 
 ## Course content
 
