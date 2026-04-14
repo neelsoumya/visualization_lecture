@@ -128,7 +128,7 @@ pumps = pd.DataFrame({
 # 🛠️ Now plot! Without looking at the code below!
 ```
 
-* Solution
+* 🛠️ Solution
 
 
 ```python
