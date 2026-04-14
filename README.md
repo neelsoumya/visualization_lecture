@@ -51,13 +51,13 @@ pip install -e requirements.txt
 
 * [Activities](activities.md) and [list of activities](exercises/README.md)
 
-* [Exercise COMPAS recidivism dataset visualization and bias in data](exercises/exercises_week8.md)
-
-
 
 * [Interactive plots using ipywidgets](exercises/exercise_week7.md) and [Interactive plots using plotly](exercises/exercise_week5.md)
 
 * [Spatial plotting using Folium and John Snow cholera visualizations and activities](exercises/exercise_week6.md)
+
+* [Exercise COMPAS recidivism dataset visualization and bias in data](exercises/exercises_week8.md)
+
 
 * [Lecture and assignments on Edward Tufte's principles of data visualization](lecture_tufte.md)
  

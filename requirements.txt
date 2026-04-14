@@ -4,3 +4,5 @@ numpy
 pandas
 ipykernel
 scikit-learn
+folium
+geopandas

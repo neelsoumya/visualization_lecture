@@ -1,8 +1,10 @@
-# John Snow visualizations (Broad Street pump London)
+# Spatial plotting using Folium and John Snow cholera visualizations and activities
+
+## John Snow visualizations (Broad Street pump London)
 
 - In the mid-19th century, London was a city struggling with rapid urbanization and a recurring, deadly mystery: cholera.
 
-- At the time, the medical establishment overwhelmingly favored miasma theory, believing that diseases were spread by "bad air" or foul odors. 
+- At the time, the medical establishment overwhelmingly favored miasma theory, believing that diseases were spread by "bad air" or foul odours. 
 
 - During the 1854 outbreak in Soho, physician John Snow challenged this dogma by hypothesizing that cholera was actually waterborne. 
 
