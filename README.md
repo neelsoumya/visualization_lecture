@@ -82,9 +82,10 @@ pip install -r requirements.txt
 
 ## Declaration
 
-Generative AI tools were used in creating these resources. All content was independently verified by the author.
+Generative AI tools were used in creating these resources. All content was independently verified by the author (Soumya Banerjee).
 
-## Notes
+
+## Miscellaneous Notes
 
 Some notes, mathematical proofs, concepts and activities are here:
 
@@ -105,7 +106,8 @@ Rmarkdown package using Tufte's principles
 
 https://github.com/rstudio/tufte
 
-## Resources
+
+## 📚📝 Resources
 
 * [R graph gallery](https://r-graph-gallery.com/)
 
@@ -185,7 +187,14 @@ https://www.youtube.com/watch?v=ZDSj-jEoaoc
 
 * [Reproducibility](https://cambiotraining.github.io/reproducibility-training/index.html) 
 
-## Installation
+## End of course on data visualization
+
+- This is the end of the course on data visualization. 
+
+- If you want to know more about reproducible notebook and Rmarkdown, please read on.
+
+
+## 📚📝 Installation for Reproducible notebooks and Rmarkdown
 
 * Install R
 
@@ -292,7 +301,7 @@ https://swcarpentry.github.io/r-novice-gapminder/guide/index.html
 https://github.com/aaronpeikert/repro-workshop
 
 
-## Lecture notes outline
+## Lecture notes outline (for reproducibility and Rmarkdown)
 
 https://github.com/neelsoumya/teaching_reproducible_science_R/blob/main/slides.pdf
 
