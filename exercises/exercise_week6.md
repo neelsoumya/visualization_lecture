@@ -2,6 +2,8 @@
 
 ## John Snow visualizations (Broad Street pump London)
 
+- [Slides](../slides/Spatial_Investigations.pptx)
+
 - In the mid-19th century, London was a city struggling with rapid urbanization and a recurring, deadly mystery: cholera.
 
 - At the time, the medical establishment overwhelmingly favored miasma theory, believing that diseases were spread by "bad air" or foul odours. 
