@@ -79,6 +79,8 @@ pip install -r requirements.txt
 
 * [Assignment on visualization](assignment.md)
 
+* [Resources](resources.md)
+
 
 ## Declaration
 
@@ -186,6 +188,7 @@ https://www.youtube.com/watch?v=ZDSj-jEoaoc
 -->
 
 * [Reproducibility](https://cambiotraining.github.io/reproducibility-training/index.html) 
+
 
 ## End of course on data visualization
 
