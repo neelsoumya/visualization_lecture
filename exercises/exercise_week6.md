@@ -12,7 +12,9 @@
 
 - To prove it, he conducted what we now recognize as a landmark piece of shoe-leather epidemiology; he meticulously interviewed residents and plotted every recorded death as a black bar on a street map. 
 
-- This map revealed a startling spatial cluster centered directly around the Broad Street water pump. Snow’s ability to transform raw data into a visual narrative not only convinced local officials to remove the pump handle—halting the epidemic
+- This map revealed a startling spatial cluster centered directly around the Broad Street water pump. 
+
+- Snow’s ability to transform raw data into a visual narrative not only convinced local officials to remove the pump handle—halting the epidemic
 
 - John Snow’s 1854 map of the [Soho cholera outbreak](https://applieddatascience.cmp.uea.ac.uk/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html) is a foundational case study in data visualization 🗺️. 
 
