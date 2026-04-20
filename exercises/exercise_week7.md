@@ -7,6 +7,15 @@
 
 - [Interactive streamlit GDP dashboard](https://github.com/neelsoumya/gdp-dashboard)
 
+- [Deploy on _streamlit.io_](https://streamlit.io/cloud)
+
+- Click on [_New app_](https://share.streamlit.io/new)
+
+- [Here](https://gdp-dashboard-t19rvs9nq2m.streamlit.app/) is a deployed app
+
+- Push your code to github and deploy
+
+
 ```python
 import streamlit as st
 import pandas as pd
@@ -29,6 +38,8 @@ tab1.line_chart(data, height=250)
 tab2.dataframe(data, height=250, use_container_width=True)
 
 ```
+
+
 
 ## ipywidgets
 
