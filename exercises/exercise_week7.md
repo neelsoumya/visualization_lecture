@@ -17,6 +17,10 @@
 
 - [Course on deeplearning.ai on streamlit](https://learn.deeplearning.ai/courses/fast-prototyping-of-genai-apps-with-streamlit/lesson/79cfr0/setting-up-your-environment)
 
+- Setup a repository in _github_
+
+- Or run in Google _Colab_
+
 - Run _streamlit_ using
 
 ```bash
@@ -49,6 +53,9 @@ tab2.dataframe(data, height=250, use_container_width=True)
 
 ```
 
+- [ngrok signup](https://dashboard.ngrok.com/signup)
+
+- [create an auth token](https://dashboard.ngrok.com/authtokens/new)
 
 
 ## ipywidgets
