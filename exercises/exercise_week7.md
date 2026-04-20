@@ -15,13 +15,20 @@
 
 - Push your code to github and deploy
 
+- Run _streamlit_ using
+
+```bash
+streamlit run script.py
+```
+
+- Here is an example script
 
 ```python
 import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.write("Streamlit supports a wide range of data visualizations, including [Plotly, Altair, and Bokeh charts](https://docs.streamlit.io/develop/api-reference/charts). 📊 And with over 20 input widgets, you can easily make your data interactive!")
+st.write("Streamlit supports a wide range of data visualizations")
 
 all_users = ["Alice", "Bob", "Charly"]
 with st.container(border=True):
@@ -30,6 +37,7 @@ with st.container(border=True):
 
 np.random.seed(19)
 data = pd.DataFrame(np.random.randn(20, len(users)), columns=users)
+
 if rolling_average:
     data = data.rolling(7).mean().dropna()
 
