@@ -82,6 +82,13 @@ pip install -r requirements.txt
 * [Resources](resources.md)
 
 
+## Tools
+
+- Python
+
+- Open AI Canvas
+
+
 ## Declaration
 
 Generative AI tools were used in creating these resources. All content was independently verified by the author (Soumya Banerjee).
