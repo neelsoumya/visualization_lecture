@@ -15,6 +15,8 @@
 
 - Push your code to github and deploy
 
+- [Course on deeplearning.ai on streamlit](https://learn.deeplearning.ai/courses/fast-prototyping-of-genai-apps-with-streamlit/lesson/79cfr0/setting-up-your-environment)
+
 - Run _streamlit_ using
 
 ```bash
