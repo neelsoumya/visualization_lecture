@@ -383,3 +383,7 @@ Using your dataset (Task 1) and your custom symbols (Task 2), design a spatial v
 * If your data is temporal, how will you represent changes over time? 
 
 **Deliverable:** Produce a programmatic prototype of your visualization (e.g., using `folium`, `geopandas`, or similar tools) or a high-fidelity mockup using your designed notations.
+
+## Geospatial visualizations using `streamlit`
+
+- [Geospatial](streamlit.io/playground?example=geospatial)
