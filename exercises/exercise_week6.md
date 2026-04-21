@@ -387,3 +387,5 @@ Using your dataset (Task 1) and your custom symbols (Task 2), design a spatial v
 ## Geospatial visualizations using `streamlit`
 
 - [Geospatial](streamlit.io/playground?example=geospatial)
+
+- Connect to `streamlit`, `Folium` and `Kepler.gl`
