@@ -1,4 +1,4 @@
-# 🎮🛠️ Exercise on interactive visualizations and visual storytelling (Superintelligence) using ipywidgets and streamlit 
+# 🎮🛠️ Exercise on interactive visualizations and visual storytelling (Superintelligence) using `ipywidgets` and `streamlit` 
 
 
 ## Streamlit
