@@ -70,6 +70,140 @@ tab2.dataframe(data, height=250, use_container_width=True)
 Once saved, you can access this secret in your Python code using `from google.colab import userdata` and then `userdata.get('YOUR_AUTHTOKEN')` (replacing `'YOUR_AUTHTOKEN'` with the name you gave your secret).
 
 
+### 📚 📝 Deployment for `streamlit`
+
+- [Streamlit](https://share.streamlit.io/new)
+
+- Create new app and connect to github
+
+- Upload your code to github (code below)
+
+```python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import folium
+from folium.plugins import HeatMap
+from streamlit_folium import st_folium
+
+st.title("Outbreak Investigator")
+st.write("Adjust the settings in the sidebar, then try to identify the source of the outbreak from the map.")
+
+# --- SIDEBAR CONTROLS ---
+st.sidebar.header("Settings")
+total_cases = st.sidebar.slider("Total cases", 100, 1000, 500)
+cluster_pct = st.sidebar.slider("% of cases near the source", 10, 90, 70)
+show_source = st.sidebar.checkbox("Reveal the true source")
+
+# --- GENERATE SYNTHETIC DATA ---
+market_lat, market_lon = 30.6195, 114.2577
+
+cluster_count = int(total_cases * cluster_pct / 100)
+noise_count = total_cases - cluster_count
+
+np.random.seed(420)
+cluster_lats = np.random.normal(market_lat, 0.005, cluster_count)
+cluster_lons = np.random.normal(market_lon, 0.005, cluster_count)
+noise_lats = np.random.uniform(30.50, 30.70, noise_count)
+noise_lons = np.random.uniform(114.20, 114.40, noise_count)
+
+cases = pd.DataFrame({
+    'lat': np.concatenate([cluster_lats, noise_lats]),
+    'lon': np.concatenate([cluster_lons, noise_lons]),
+})
+
+pois = pd.DataFrame({
+    'name': ['Wuhan International Plaza', 'Huanan Seafood Market', 'Hankou Railway Station', 'Wuhan CDC'],
+    'lat':  [30.584,   30.6195, 30.618, 30.612],
+    'lon':  [114.271,  114.2577, 114.250, 114.265],
+    'is_source': [False, True, False, False],
+})
+
+# --- SHOW STATS ---
+st.write(f"**Total cases:** {total_cases} — **Clustered:** {cluster_count} — **Scattered:** {noise_count}")
+
+# --- BUILD MAP ---
+m = folium.Map(location=[30.61, 114.28], zoom_start=13, tiles='cartodbpositron')
+
+HeatMap(cases[['lat', 'lon']].values.tolist(), radius=12, blur=15).add_to(m)
+
+for _, poi in pois.iterrows():
+    if poi['is_source'] and show_source:
+        color = 'red'
+        label = f"TRUE SOURCE: {poi['name']}"
+    else:
+        color = 'black'
+        label = poi['name']
+
+    folium.Marker(
+        location=[poi['lat'], poi['lon']],
+        popup=label,
+        tooltip=label,
+        icon=folium.Icon(color=color, icon='question-sign'),
+    ).add_to(m)
+
+st_folium(m, width=900, height=550)
+```
+
+- `requirements.txt` is here
+
+```bash
+streamlit>=1.35.0
+streamlit-folium>=0.20.0
+folium>=0.17.0
+pandas>=2.0.0
+numpy>=1.26.0
+```
+
+- [Connect to code on github](https://github.com/neelsoumya/wuhan_covid_scavenger_hunt_streamlit_teaching)
+
+- [Deployed app](https://wuhan-scavenger-hunt-interactive.streamlit.app/)
+
+
+### Geospatial visualization using `streamlit`
+
+```python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import pydeck as pdk
+
+st.write("Streamlit has lots of fans in the geo community. 🌍 It supports maps from PyDeck, Folium, Kepler.gl, and others.")
+
+chart_data = pd.DataFrame(
+   np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+   columns=['lat', 'lon'])
+
+st.pydeck_chart(pdk.Deck(
+    map_style=None,
+    initial_view_state=pdk.ViewState(
+        latitude=37.76,
+        longitude=-122.4,
+        zoom=11,
+        pitch=50,
+    ),
+    layers=[
+        pdk.Layer(
+           'HexagonLayer',
+           data=chart_data,
+           get_position='[lon, lat]',
+           radius=200,
+           elevation_scale=4,
+           elevation_range=[0, 1000],
+           pickable=True,
+           extruded=True,
+        ),
+        pdk.Layer(
+            'ScatterplotLayer',
+            data=chart_data,
+            get_position='[lon, lat]',
+            get_color='[200, 30, 0, 160]',
+            get_radius=200,
+        ),
+    ],
+))
+```
+
 ## `ipywidgets` 
 
 - We show how to create interactive visualizations
