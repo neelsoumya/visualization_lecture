@@ -78,6 +78,8 @@ Once saved, you can access this secret in your Python code using `from google.co
 
 - Create new app and connect to [github](https://github.com/)
 
+- Create new repository on github
+
 - Upload your code to github (code below)
 
 ```python
@@ -156,6 +158,8 @@ folium>=0.17.0
 pandas>=2.0.0
 numpy>=1.26.0
 ```
+
+- Test code on github codespaces
 
 - [Connect to code on github](https://github.com/neelsoumya/wuhan_covid_scavenger_hunt_streamlit_teaching)
 
