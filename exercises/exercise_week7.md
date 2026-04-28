@@ -74,7 +74,9 @@ Once saved, you can access this secret in your Python code using `from google.co
 
 - [Streamlit](https://share.streamlit.io/new)
 
-- Create new app and connect to github
+- [Github](https://github.com/) Create new account on github
+
+- Create new app and connect to [github](https://github.com/)
 
 - Upload your code to github (code below)
 
@@ -161,6 +163,7 @@ numpy>=1.26.0
 
 
 - can also deploy on [Huggingface spaces](https://huggingface.co/spaces)
+
 
 ### Geospatial visualization using `streamlit`
 
