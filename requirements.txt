@@ -8,3 +8,4 @@ folium
 geopandas
 streamlit
 plotly
+streamlit-folium>=0.20.0
