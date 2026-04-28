@@ -159,7 +159,7 @@ pandas>=2.0.0
 numpy>=1.26.0
 ```
 
-- Test code on github codespaces
+- Test code on [github codespaces](https://github.com/codespaces/new)
 
 - [Connect to code on github](https://github.com/neelsoumya/wuhan_covid_scavenger_hunt_streamlit_teaching)
 
