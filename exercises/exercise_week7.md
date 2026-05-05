@@ -856,7 +856,7 @@ display(Markdown('**Notebook ready — change sliders above or use the quiz to e
 ```
 
 
-## Gradio
+## `Gradio`
 
 - [Gradio](https://www.gradio.app/)
 
