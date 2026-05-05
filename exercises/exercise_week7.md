@@ -172,11 +172,14 @@ numpy>=1.26.0
 
 - The code is shown in the next section
 
+- Also deployed through [github](https://github.com/neelsoumya/streamlit_spatial/) and [streamlit](https://geospatial-visualization-soumya.streamlit.app/)
+
+
 ### Geospatial visualization using `streamlit`
 
 - deployed app [here](https://huggingface.co/spaces/neelsoumya/streamlit_spatial)
 
-- code is shown below
+- 🎮 code is shown below
 
 ```python
 import streamlit as st
