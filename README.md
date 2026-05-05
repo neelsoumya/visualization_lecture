@@ -54,7 +54,7 @@ pip install -r requirements.txt
 * [Activities](activities.md) and [list of activities](exercises/README.md)
 
 
-* [Interactive plots using ipywidgets and streamlit](exercises/exercise_week7.md) and [Interactive plots using plotly](exercises/exercise_week5.md)
+* [Interactive plots using `ipywidgets` and `streamlit` and `gradio`](exercises/exercise_week7.md) and [Interactive plots using plotly](exercises/exercise_week5.md)
 
 * [Spatial plotting using Folium and John Snow cholera visualizations and activities](exercises/exercise_week6.md)
 

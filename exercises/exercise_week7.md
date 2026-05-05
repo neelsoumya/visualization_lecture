@@ -1,4 +1,4 @@
-# 🎮🛠️ Exercise on interactive visualizations and visual storytelling (Superintelligence) using `ipywidgets` and `streamlit` 
+# 🎮🛠️ Exercise on interactive visualizations and visual storytelling (Superintelligence) using `ipywidgets` and `streamlit` and `gradio`
 
 
 ## Streamlit
@@ -860,9 +860,7 @@ display(Markdown('**Notebook ready — change sliders above or use the quiz to e
 
 - [Gradio](https://www.gradio.app/)
 
-- # Gradio
-
-This Python code uses the gradio and plotly.express libraries to create an interactive web application that visualizes car-sharing data on a map.
+- here is python code using the gradio and plotly.express libraries to create an interactive web application that visualizes car-sharing data on a map.
 
 Here's a breakdown of what it does:
 
