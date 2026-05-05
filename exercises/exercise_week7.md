@@ -168,8 +168,15 @@ numpy>=1.26.0
 
 - can also deploy on [Huggingface spaces](https://huggingface.co/spaces)
 
+- For example, see the deployed app [here](https://huggingface.co/spaces/neelsoumya/streamlit_spatial)
+
+- The code is shown in the next section
 
 ### Geospatial visualization using `streamlit`
+
+- deployed app [here](https://huggingface.co/spaces/neelsoumya/streamlit_spatial)
+
+- code is shown below
 
 ```python
 import streamlit as st
