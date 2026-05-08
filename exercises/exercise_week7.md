@@ -860,9 +860,9 @@ display(Markdown('**Notebook ready — change sliders above or use the quiz to e
 
 - [Gradio](https://www.gradio.app/)
 
-- here is python code using the gradio and plotly.express libraries to create an interactive web application that visualizes car-sharing data on a map.
+- here is python code using gradio and plotly.express libraries to create an interactive web application that visualizes car-sharing data on a map.
 
-Here's a breakdown of what it does:
+Here is a breakdown of what it does:
 
 * Loads Data: It starts by loading a built-in spatial dataset called carshare from Plotly, which contains information about car availability, centroids (latitude and longitude), and peak hour usage.
 
