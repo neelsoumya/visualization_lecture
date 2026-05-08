@@ -24,4 +24,8 @@
 
 - [_Nature_ paper on to create plots for effective communication](https://www.nature.com/articles/s41562-026-02466-9)
 
+> Clarify the main message before designing a figure (this is the most important point).
+
+> Identify the audience and context, and adjust the level of detail.
+
 - [Next: Assignment](assignment.md)
