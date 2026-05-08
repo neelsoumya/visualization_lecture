@@ -22,5 +22,6 @@
 
 - [Principles of writing](https://sites.google.com/site/neelsoumya/research-resources/scientific-writing?authuser=0)
 
+- [_Nature_ paper on to create plots for effective communication](https://www.nature.com/articles/s41562-026-02466-9)
 
 - [Next: Assignment](assignment.md)
