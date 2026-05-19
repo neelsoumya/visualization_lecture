@@ -941,3 +941,8 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
     demo.launch()
 ```
+
+
+## Huggingface
+
+- [App deployed on huggingface spaces](https://huggingface.co/spaces/neelsoumya/opensourcechatbot)
